@@ -1,0 +1,5 @@
+C:\Users\HP\source\repos\Business Application Version 1\Business Application Version 1\obj\Debug\net6.0\Business Application Version 1.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\Business Application Version 1\Business Application Version 1\obj\Debug\net6.0\Business Application Version 1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\source\repos\Business Application Version 1\Business Application Version 1\obj\Debug\net6.0\Business Application Version 1.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\Business Application Version 1\Business Application Version 1\obj\Debug\net6.0\Business Application Version 1.AssemblyInfo.cs
+C:\Users\HP\source\repos\Business Application Version 1\Business Application Version 1\obj\Debug\net6.0\Business Application Version 1.csproj.CoreCompileInputs.cache
