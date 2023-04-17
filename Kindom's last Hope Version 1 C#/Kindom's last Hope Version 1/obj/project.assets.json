@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\source\\repos\\Kindom's last Hope Version 1\\Kindom's last Hope Version 1\\Kindom's last Hope Version 1.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\source\\repos\\Kindom's last Hope Version 1 C#\\Kindom's last Hope Version 1\\Kindom's last Hope Version 1.csproj",
       "projectName": "Kindom's last Hope Version 1",
-      "projectPath": "C:\\Users\\HP\\source\\repos\\Kindom's last Hope Version 1\\Kindom's last Hope Version 1\\Kindom's last Hope Version 1.csproj",
+      "projectPath": "C:\\Users\\HP\\source\\repos\\Kindom's last Hope Version 1 C#\\Kindom's last Hope Version 1\\Kindom's last Hope Version 1.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\source\\repos\\Kindom's last Hope Version 1\\Kindom's last Hope Version 1\\obj\\",
+      "outputPath": "C:\\Users\\HP\\source\\repos\\Kindom's last Hope Version 1 C#\\Kindom's last Hope Version 1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",

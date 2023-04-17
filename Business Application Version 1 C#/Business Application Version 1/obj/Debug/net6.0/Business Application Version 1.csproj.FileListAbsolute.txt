@@ -3,3 +3,18 @@ C:\Users\HP\source\repos\Business Application Version 1\Business Application Ver
 C:\Users\HP\source\repos\Business Application Version 1\Business Application Version 1\obj\Debug\net6.0\Business Application Version 1.AssemblyInfoInputs.cache
 C:\Users\HP\source\repos\Business Application Version 1\Business Application Version 1\obj\Debug\net6.0\Business Application Version 1.AssemblyInfo.cs
 C:\Users\HP\source\repos\Business Application Version 1\Business Application Version 1\obj\Debug\net6.0\Business Application Version 1.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\Business Application Version 1 C#\Business Application Version 1\obj\Debug\net6.0\Business Application Version 1.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\Business Application Version 1 C#\Business Application Version 1\obj\Debug\net6.0\Business Application Version 1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\source\repos\Business Application Version 1 C#\Business Application Version 1\obj\Debug\net6.0\Business Application Version 1.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\Business Application Version 1 C#\Business Application Version 1\obj\Debug\net6.0\Business Application Version 1.AssemblyInfo.cs
+C:\Users\HP\source\repos\Business Application Version 1 C#\Business Application Version 1\obj\Debug\net6.0\Business Application Version 1.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\Business Application Version 1 C#\Business Application Version 1\bin\Debug\net6.0\Business Application Version 1.exe
+C:\Users\HP\source\repos\Business Application Version 1 C#\Business Application Version 1\bin\Debug\net6.0\Business Application Version 1.deps.json
+C:\Users\HP\source\repos\Business Application Version 1 C#\Business Application Version 1\bin\Debug\net6.0\Business Application Version 1.runtimeconfig.json
+C:\Users\HP\source\repos\Business Application Version 1 C#\Business Application Version 1\bin\Debug\net6.0\Business Application Version 1.dll
+C:\Users\HP\source\repos\Business Application Version 1 C#\Business Application Version 1\bin\Debug\net6.0\Business Application Version 1.pdb
+C:\Users\HP\source\repos\Business Application Version 1 C#\Business Application Version 1\obj\Debug\net6.0\Business Application Version 1.dll
+C:\Users\HP\source\repos\Business Application Version 1 C#\Business Application Version 1\obj\Debug\net6.0\refint\Business Application Version 1.dll
+C:\Users\HP\source\repos\Business Application Version 1 C#\Business Application Version 1\obj\Debug\net6.0\Business Application Version 1.pdb
+C:\Users\HP\source\repos\Business Application Version 1 C#\Business Application Version 1\obj\Debug\net6.0\Business Application Version 1.genruntimeconfig.cache
+C:\Users\HP\source\repos\Business Application Version 1 C#\Business Application Version 1\obj\Debug\net6.0\ref\Business Application Version 1.dll

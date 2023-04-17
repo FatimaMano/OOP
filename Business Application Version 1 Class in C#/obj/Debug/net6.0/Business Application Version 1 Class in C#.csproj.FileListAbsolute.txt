@@ -1,0 +1,5 @@
+C:\Users\HP\source\repos\Business Application Version 1 Class in C#\obj\Debug\net6.0\Business Application Version 1 Class in C#.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\Business Application Version 1 Class in C#\obj\Debug\net6.0\Business Application Version 1 Class in C#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\source\repos\Business Application Version 1 Class in C#\obj\Debug\net6.0\Business Application Version 1 Class in C#.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\Business Application Version 1 Class in C#\obj\Debug\net6.0\Business Application Version 1 Class in C#.AssemblyInfo.cs
+C:\Users\HP\source\repos\Business Application Version 1 Class in C#\obj\Debug\net6.0\Business Application Version 1 Class in C#.csproj.CoreCompileInputs.cache
