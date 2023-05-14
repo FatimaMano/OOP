@@ -1,0 +1,5 @@
+C:\Users\HP\source\repos\UAMS\obj\Debug\net6.0\UAMS.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\UAMS\obj\Debug\net6.0\UAMS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\source\repos\UAMS\obj\Debug\net6.0\UAMS.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\UAMS\obj\Debug\net6.0\UAMS.AssemblyInfo.cs
+C:\Users\HP\source\repos\UAMS\obj\Debug\net6.0\UAMS.csproj.CoreCompileInputs.cache

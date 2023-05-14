@@ -1,0 +1,15 @@
+C:\Users\HP\source\repos\ClockType Class\bin\Debug\net6.0\ClockType Class.exe
+C:\Users\HP\source\repos\ClockType Class\bin\Debug\net6.0\ClockType Class.deps.json
+C:\Users\HP\source\repos\ClockType Class\bin\Debug\net6.0\ClockType Class.runtimeconfig.json
+C:\Users\HP\source\repos\ClockType Class\bin\Debug\net6.0\ClockType Class.dll
+C:\Users\HP\source\repos\ClockType Class\bin\Debug\net6.0\ClockType Class.pdb
+C:\Users\HP\source\repos\ClockType Class\obj\Debug\net6.0\ClockType Class.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\ClockType Class\obj\Debug\net6.0\ClockType Class.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\source\repos\ClockType Class\obj\Debug\net6.0\ClockType Class.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\ClockType Class\obj\Debug\net6.0\ClockType Class.AssemblyInfo.cs
+C:\Users\HP\source\repos\ClockType Class\obj\Debug\net6.0\ClockType Class.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\ClockType Class\obj\Debug\net6.0\ClockType Class.dll
+C:\Users\HP\source\repos\ClockType Class\obj\Debug\net6.0\refint\ClockType Class.dll
+C:\Users\HP\source\repos\ClockType Class\obj\Debug\net6.0\ClockType Class.pdb
+C:\Users\HP\source\repos\ClockType Class\obj\Debug\net6.0\ClockType Class.genruntimeconfig.cache
+C:\Users\HP\source\repos\ClockType Class\obj\Debug\net6.0\ref\ClockType Class.dll

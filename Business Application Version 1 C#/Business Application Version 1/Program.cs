@@ -79,7 +79,7 @@ namespace BootingCSharp
                     string role;
                     subMenuBeforeMainMenu("SignIn");
                     Console.WriteLine("Enter username");
-                    name = Console.ReadLine();
+                    string name = Console.ReadLine();
                     name = isAlpha(name);
                     Console.WriteLine("Enter password");
                     password = Console.ReadLine();

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "qYce67+AlFBWEjiS/nARuXQq+tA7eI1HUBuTWdes8b7QVA8+NMXNnGvkLNRMLMjOeUUZwta+Ll4fUM7mlkPTgw==",
+  "dgSpecHash": "58hU1NYRp5u4cdVcWQkMlwu8LunpCvDFBl+DB+/gmuMpVaWUkXwsMRCjVuMZRCuzbCOoLoPxA2WfA0AVJdOrgQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\HP\\source\\repos\\Kindom's last Hope Version 1 C#\\Kindom's last Hope Version 1\\Kindom's last Hope Version 1.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\HP\\.nuget\\packages\\ezinput\\1.3.2\\ezinput.1.3.2.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -3,3 +3,13 @@ C:\Users\HP\source\repos\Business Application Version 1 Class in C#\obj\Debug\ne
 C:\Users\HP\source\repos\Business Application Version 1 Class in C#\obj\Debug\net6.0\Business Application Version 1 Class in C#.AssemblyInfoInputs.cache
 C:\Users\HP\source\repos\Business Application Version 1 Class in C#\obj\Debug\net6.0\Business Application Version 1 Class in C#.AssemblyInfo.cs
 C:\Users\HP\source\repos\Business Application Version 1 Class in C#\obj\Debug\net6.0\Business Application Version 1 Class in C#.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\Business Application Version 1 Class in C#\bin\Debug\net6.0\Business Application Version 1 Class in C#.exe
+C:\Users\HP\source\repos\Business Application Version 1 Class in C#\bin\Debug\net6.0\Business Application Version 1 Class in C#.deps.json
+C:\Users\HP\source\repos\Business Application Version 1 Class in C#\bin\Debug\net6.0\Business Application Version 1 Class in C#.runtimeconfig.json
+C:\Users\HP\source\repos\Business Application Version 1 Class in C#\bin\Debug\net6.0\Business Application Version 1 Class in C#.dll
+C:\Users\HP\source\repos\Business Application Version 1 Class in C#\bin\Debug\net6.0\Business Application Version 1 Class in C#.pdb
+C:\Users\HP\source\repos\Business Application Version 1 Class in C#\obj\Debug\net6.0\Business Application Version 1 Class in C#.dll
+C:\Users\HP\source\repos\Business Application Version 1 Class in C#\obj\Debug\net6.0\refint\Business Application Version 1 Class in C#.dll
+C:\Users\HP\source\repos\Business Application Version 1 Class in C#\obj\Debug\net6.0\Business Application Version 1 Class in C#.pdb
+C:\Users\HP\source\repos\Business Application Version 1 Class in C#\obj\Debug\net6.0\Business Application Version 1 Class in C#.genruntimeconfig.cache
+C:\Users\HP\source\repos\Business Application Version 1 Class in C#\obj\Debug\net6.0\ref\Business Application Version 1 Class in C#.dll

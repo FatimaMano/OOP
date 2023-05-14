@@ -7,8 +7,6 @@ using System.Threading.Tasks;
 using System.Xml.Linq;
 using System.IO;
 using System.Data;
-using Business_Application_Version_1_Class_in_C.BL;
-
 
 namespace BootingCSharp
 {
@@ -81,7 +79,7 @@ namespace BootingCSharp
                     string role;
                     subMenuBeforeMainMenu("SignIn");
                     Console.WriteLine("Enter username");
-                    name = Console.ReadLine();
+                    string name = Console.ReadLine();
                     name = isAlpha(name);
                     Console.WriteLine("Enter password");
                     password = Console.ReadLine();
@@ -102,28 +100,29 @@ namespace BootingCSharp
                     {
                         Console.WriteLine("User Not exist");
                         Console.WriteLine("Sign up");
-                        Console.Readkey();
+                        Console.Read();
                     }
                 }
                 if (option == 2)
                 {
                     PrintHeader();
                     // Variables Decleration
-                    string role, address, email;
+                    string role, address = " ", email;
                     int age;
                     string phoneNumber;
 
                     // Input Number
                     subMenuBeforeMainMenu("Signup");
                     Console.WriteLine("Enter username");
-                    Candidate.name = isAlpha(name);
+                    name = isAlpha(name);
                     Console.WriteLine("Enter your Role(Admin / Staff / Candidate");
+                    role = Console.ReadLine();
                     role = isAlpha(role);
                     ValidEmail();
                     Console.WriteLine("Create a new password");
                     password = Console.ReadLine();
                     Console.WriteLine("Enter your age");
-                    age = integerValidation();
+                    age = IntegerValidation();
                     Console.WriteLine("Enter your Phone Number");
                     phoneNumber = Console.ReadLine();
                     string check;
@@ -147,10 +146,6 @@ namespace BootingCSharp
 
         }
 
-        private static string? isAlpha(string? role)
-        {
-            throw new NotImplementedException();
-        }
 
         // Log Screen
         static int LogMenuScreen()
@@ -245,6 +240,7 @@ namespace BootingCSharp
                     flag = true;
                 }
             }
+            /*
             else if (role == "Staff")
             {
                 if (NameStaff == name && passwordStaff == password)
@@ -252,6 +248,7 @@ namespace BootingCSharp
                     flag = true;
                 }
             }
+            */
             return flag;
         }
 
@@ -326,22 +323,23 @@ namespace BootingCSharp
                 }
                 return option;
             }
+            return 0;
         }
-        void AdminScreen(int idx)
+        static void AdminScreen(int idx)
         {
             int adminOption = 0;
             while (adminOption != 10)
             {
                 PrintHeader();
                 subMenu("Admin");
-                adminOption = adminMenu();
+                adminOption = AdminMenu();
                 Console.Clear();
                 if (adminOption == 1)
                 {
                     Console.Clear();
                     PrintHeader();
                     addCandidate(countUsers);
-                    adminMenu();
+                    AdminMenu();
                 }
                 else if (adminOption == 2)
                 {
@@ -382,7 +380,8 @@ namespace BootingCSharp
                     Console.Clear();
                     PrintHeader();
                     Console.WriteLine("Enter the name of the Student");
-                    string name = isAlpha(name);
+                    string name = Console.ReadLine();
+                    name = isAlpha(name);
                     int indx = SearchString(name, "Candidate");
                     AddPhysicalFitnessTest(indx);
                 }
@@ -400,6 +399,8 @@ namespace BootingCSharp
                 }
             }
         }
+
+
 
         static void subMenuBeforeMainMenu(string submenu)
         {
@@ -442,9 +443,9 @@ namespace BootingCSharp
             Console.WriteLine("Create password");
             passwordsCandidates[idx] = Console.ReadLine();
             Console.WriteLine("Add his Academic score");
-            AcademicTest[idx] = integerValidation();
+            AcademicTest[idx] = IntegerValidation();
             Console.WriteLine("Add his Intelligence Test");
-            IntelligenceTest[idx] = integerValidation();
+            IntelligenceTest[idx] = IntegerValidation();
             StoreDataInOutputMode("Candidate");
         }
         static void ViewTopCandidates()
@@ -550,9 +551,9 @@ namespace BootingCSharp
         {
             for (int i = 0; i < numTests; i++)
             {
-                Console.Writeline("Enter the name of test {0} : ", i + 1);
+                Console.WriteLine("Enter the name of test {0} : ", i + 1);
                 testNames[i] = Console.ReadLine();
-                Console.ReadLine("Enter the date of test {0}  (dd/mm/yyyy): ", i + 1);
+                Console.WriteLine("Enter the date of test {0}  (dd/mm/yyyy): ", i + 1);
                 testDates[i] = Console.ReadLine();
                 Console.WriteLine("Enter the time of test {0} (hh:mm): ", i + 1);
                 testTimes[i] = Console.ReadLine();
@@ -562,7 +563,7 @@ namespace BootingCSharp
         {
             for (int i = 0; i < 5; i++)
             {
-                PhysicalTest[i, idx] = int.Parse(Console.ReadLine());
+                PhysicalTest[i, idx] = IntegerValidation();
             }
             Console.Clear();
         }
@@ -585,8 +586,7 @@ namespace BootingCSharp
             */
         }
         ///Validations
-        
-        static string IsAlpha(string input)
+        static string isAlpha(string input)
         {
             int size = input.Length;
             bool isValid = true;
@@ -614,7 +614,7 @@ namespace BootingCSharp
                 Console.WriteLine("Invalid character detected!");
                 Console.WriteLine("Enter again: ");
                 input = Console.ReadLine();
-                return IsAlpha(input);
+                return isAlpha(input);
             }
         }
 
@@ -637,10 +637,9 @@ namespace BootingCSharp
             }
             return flag;
         }
-
         static string ValidEmail()
         {
-            string email;
+            string email = " ";
             bool valid = false;
             while (!valid)
             {
@@ -679,8 +678,6 @@ namespace BootingCSharp
                 }
             }
 
-            return email;
-        }
             return email;
         }
         //File Handling
@@ -762,24 +759,95 @@ namespace BootingCSharp
             }
         }
 
-    static void StoreAdminFile(string data)
-    {
-        using (StreamWriter sw = File.AppendText("Admin.txt"))
+        static void storeAdminFile(string name, string phoneNumber, string password, int age, string role)
         {
-            sw.Write(data + ",");
+            StoreNextRecord("Admin");
+            string path = "Admin.txt";
+            StreamWriter file = new StreamWriter(path, true);
+            file.Write(name + "," + role + "," + password + "," + age + "," + phoneNumber);
+            file.Flush();
+            file.Close();
+            NameAdmin = name;
+            roleAdmin = role;
+            passwordAdmin = password;
+            ageAdmin = age;
+            phoneNumberAdmin = phoneNumber;
         }
-    }
-
-    static void StoreInCandidateFile(string data)
-    {
-        using (StreamWriter sw = File.AppendText("CandidateData.txt"))
+        static void StoreAdminFile(string data)
         {
-            sw.Write(data + ",");
+            using (StreamWriter sw = File.AppendText("C:\\Users\\HP\\source\\repos\\Business Application Version 1 C#\\File Storage\\Admin.txt"))
+            {
+                sw.Write(data + ",");
+            }
         }
-    }
+
+        static void StoreInCandidateFile(string data)
+        {
+            using (StreamWriter sw = File.AppendText("C:\\Users\\HP\\source\\repos\\Business Application Version 1 C#\\File Storage\\CandidateData.txt"))
+            {
+                sw.Write(data + ",");
+            }
+        }
+
+        static void StoreDataBasedOnRole(string name, string phoneNumber, string password, int age, string role, string address, string lowercaserole)
+        {
+            // StoreDataBasedonRole
+            if (lowercaserole == "candidate")
+            {
+                // Here Data is store in array and File both in their respective position
+                StoreNextRecord("CandidateData"); // First the cursor shift to the new line in file
+                namesCandidates[countUsers] = name;
+                StoreInCandidateFile(name); // From here it will start storing the data by comma seperated
+                passwordsCandidates[countUsers] = password;
+                StoreInCandidateFile(password);
+                roles[countUsers] = role;
+                StoreInCandidateFile(role);
+                agesCandidates[countUsers] = age;
+                StoreInCandidateFile(age.ToString());
+                phoneNumbersCandidates[countUsers] = phoneNumber;
+                StoreInCandidateFile(phoneNumber);
+                AddressesCandidates[countUsers] = address;
+                StoreInCandidateFile(address);
+
+            }
+            /*
+            else if (lowercaserole == "staff")
+            {
+                // Here Data is store in array and File both in their respective position
+                StoreNextRecord("EmployeesData");
+                namesStaff[countStaff] = name;
+                storeInStaffFile(name);
+                rolesStaff[countStaff] = role;
+                storeInStaffFile(role);
+                passwordsStaff[countStaff] = password;
+                storeInStaffFile(password);
+                agesStaff[countStaff] = age;
+                storeInStaffFile(age.ToString());
+                phoneNumbersStaff[countStaff] = phoneNumber;
+                storeInStaffFile(phoneNumber);
+                AddressesStaff[countStaff] = address;
+                storeInStaffFile(address);
+            }
+            */
+            else if (lowercaserole == "admin")
+            {
+                // Here Data is store in array and File both in their respective position
+                StoreNextRecord("Admin");
+                NameAdmin = name;
+                StoreAdminFile(name);
+                roleAdmin = role;
+                StoreAdminFile(role);
+                passwordAdmin = password;
+                StoreAdminFile(password);
+                ageAdmin = age;
+                StoreAdminFile(age.ToString());
+                phoneNumberAdmin = phoneNumber;
+                StoreAdminFile(phoneNumber);
+            }
+        }
 
 
-    static void StoreNextRecord(string filename)
+        static void StoreNextRecord(string filename)
         {
             if (filename == "CandidateData")
             {

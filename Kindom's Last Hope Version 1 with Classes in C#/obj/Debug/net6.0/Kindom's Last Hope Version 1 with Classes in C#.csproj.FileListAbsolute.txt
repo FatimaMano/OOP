@@ -1,0 +1,5 @@
+C:\Users\HP\source\repos\Kindom's Last Hope Version 1 with Classes in C#\obj\Debug\net6.0\Kindom's Last Hope Version 1 with Classes in C#.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\Kindom's Last Hope Version 1 with Classes in C#\obj\Debug\net6.0\Kindom's Last Hope Version 1 with Classes in C#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\source\repos\Kindom's Last Hope Version 1 with Classes in C#\obj\Debug\net6.0\Kindom's Last Hope Version 1 with Classes in C#.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\Kindom's Last Hope Version 1 with Classes in C#\obj\Debug\net6.0\Kindom's Last Hope Version 1 with Classes in C#.AssemblyInfo.cs
+C:\Users\HP\source\repos\Kindom's Last Hope Version 1 with Classes in C#\obj\Debug\net6.0\Kindom's Last Hope Version 1 with Classes in C#.csproj.CoreCompileInputs.cache
