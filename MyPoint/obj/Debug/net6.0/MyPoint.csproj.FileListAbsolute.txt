@@ -1,0 +1,5 @@
+C:\Users\HP\source\repos\MyPoint\obj\Debug\net6.0\MyPoint.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\MyPoint\obj\Debug\net6.0\MyPoint.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\source\repos\MyPoint\obj\Debug\net6.0\MyPoint.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\MyPoint\obj\Debug\net6.0\MyPoint.AssemblyInfo.cs
+C:\Users\HP\source\repos\MyPoint\obj\Debug\net6.0\MyPoint.csproj.CoreCompileInputs.cache
