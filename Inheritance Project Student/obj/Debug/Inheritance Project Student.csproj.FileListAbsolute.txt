@@ -1,0 +1,9 @@
+C:\Users\HP\source\repos\Inheritance Project Student\bin\Debug\Inheritance Project Student.exe.config
+C:\Users\HP\source\repos\Inheritance Project Student\bin\Debug\Inheritance Project Student.exe
+C:\Users\HP\source\repos\Inheritance Project Student\bin\Debug\Inheritance Project Student.pdb
+C:\Users\HP\source\repos\Inheritance Project Student\obj\Debug\Inheritance Project Student.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\Inheritance Project Student\obj\Debug\Inheritance_Project_Student.Properties.Resources.resources
+C:\Users\HP\source\repos\Inheritance Project Student\obj\Debug\Inheritance Project Student.csproj.GenerateResource.cache
+C:\Users\HP\source\repos\Inheritance Project Student\obj\Debug\Inheritance Project Student.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\Inheritance Project Student\obj\Debug\Inheritance Project Student.exe
+C:\Users\HP\source\repos\Inheritance Project Student\obj\Debug\Inheritance Project Student.pdb
