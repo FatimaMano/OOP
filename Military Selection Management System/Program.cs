@@ -1,71 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
-using System.Xml.Linq;
-using System.IO;
-using System.Data;
-using Business_Application_Version_1_Class_in_C.BL;
 
-namespace Business_Application_Project_Version_2
+namespace Military_Selection_Management_System
 {
     class Program
     {
-        static List<Candidate> candidatesList = new List<Candidate>();
-        static List<Candidate> topCandidatesList = new List<Candidate>();
-        // Admin
-        static string NameAdmin = " ";
-        static string passwordAdmin = " ";
-        static string addressAdmin = " ";
-        static int ageAdmin;
-        static string phoneNumberAdmin = " ";
-        static string emailAddressAdmin = " ";
-        static string roleAdmin = " ";
-        // Count
-        static int countUsers;
-        static int countStaff;
-        /*
-        static string name = " ";
-        static string password = " ";
-        static string Education = " ";
-        static int budget;
-        // Test Schedule
-        static string[] testNames = new string[15];
-        static string[] testDates = new string[15];
-        static string[] testTimes = new string[15];
-
-        // User
-        static string[] namesCandidates = new string[200];
-        static string[] passwordsCandidates = new string[200];
-        static string[] AddressesCandidates = new string[200];
-        static int[] agesCandidates = new int[200];
-        static string[] phoneNumbersCandidates = new string[200];
-        static string[] emailAddressCandidates = new string[200];
-        static string[] rolesCandidates = new string[200];
-        static string[] Allergies = new string[200];
-        static string[] Treatments = new string[200];
-        static string[] complain = new string[200];
-        static string[] ages = new string[200];
-        static string[] roles = new string[200];
-        static int[] number = new int[200];
-        static float[] MatricMarks = new float[200];
-        static float[] InterMarksPart = new float[200];
-        static float[] CGPA = new float[200];
-        static int[] IntelligenceTest = new int[200];
-        static int[] AcademicTest = new int[200];
-        static int Max_Candidates = 200;
-        static int Max_details = 5;
-        static string[] SelectionStatus = new string[200];
-        static string[] TopCandidatesName = new string[10];
-        static string[] TopCandidatesAge = new string[10];
-        static string[] TopCandidatesResult = new string[10];
-        static int[,] PhysicalTest = new int[6, 200];
-        static string[] TestNames = { "Running", "Sit ups", "Push Ups", "logmenuChin ups", "Ditch Crossing" };
-        static int[] Height = new int[200];
-        static int[] Weight = new int[200];
-        */
         static void Main(string[] args)
         {
             string name = " ";
@@ -80,6 +22,10 @@ namespace Business_Application_Project_Version_2
             LoadDataFromAdminFile();
             int option = 4;
             Console.Clear();
+            do
+            {
+
+            }
             while (option != 0)
             {
                 option = LogMenuScreen();
@@ -131,7 +77,7 @@ namespace Business_Application_Project_Version_2
                     ValidEmail();
                     Console.WriteLine("Create a new password");
                     password = Console.ReadLine();
-                    Console.WriteLine("Enter your agere");
+                    Console.WriteLine("Enter your age");
                     age = IntegerValidation();
                     Console.WriteLine("Enter your Phone Number");
                     phoneNumber = Console.ReadLine();
@@ -183,7 +129,7 @@ namespace Business_Application_Project_Version_2
             return option;
         }
 
-        static string Signin(string username, string password, string role,List<Candidate> candidatesList)
+        static string Signin(string username, string password, string role, List<Candidate> candidatesList)
         {
             if (UserExist(username, password, role, candidatesList)
             {
@@ -229,7 +175,7 @@ namespace Business_Application_Project_Version_2
             return "Success";
         }
 
-        static bool UserExist(string name, string password, string role,List<Candidate> candidatesList)
+        static bool UserExist(string name, string password, string role, List<Candidate> candidatesList)
         {
             bool flag = false;
             if (role == "Candidate")
@@ -826,9 +772,9 @@ namespace Business_Application_Project_Version_2
             string name = Console.ReadLine();
             Console.WriteLine("Enter Password: ");
             string password = Console.ReadLine();
-            if(name!= null && password != null)
+            if (name != null && password != null)
             {
-                Candidate candidate = new Candidate(name,password);
+                Candidate candidate = new Candidate(name, password);
                 return candidate;
             }
             return null;
@@ -841,7 +787,7 @@ namespace Business_Application_Project_Version_2
             string password = Console.ReadLine();
             Console.WriteLine("Enter Role");
             string role = Console.ReadLine();
-            if(name!= null && password != null && role!=null)
+            if (name != null && password != null && role != null)
             {
                 Candidate candidate = new Candidate(name, password, role);
                 return candidate;
@@ -1000,7 +946,7 @@ namespace Business_Application_Project_Version_2
             Console.WriteLine("###################################################################################################################################################");
         }
 
-        static int SearchString(string name, string role,List<Candidate> candidates)
+        static int SearchString(string name, string role, List<Candidate> candidates)
         {
             int idx = -1;
             if (role == "Candidate")
@@ -1029,6 +975,6 @@ namespace Business_Application_Project_Version_2
             */
             return idx;
         }
-
     }
+
 }

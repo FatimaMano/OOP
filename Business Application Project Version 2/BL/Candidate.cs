@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Business_Application_Version_1_Class_in_C.BL
+namespace Business_Application_Project_Version_2.BL
 {
-    public class Candidate
+    public class Candidate : Person
     {
         public string name;
         public string password;

@@ -1,0 +1,10 @@
+C:\Users\HP\source\repos\FirstDesktopApp\bin\Debug\FirstDesktopApp.exe.config
+C:\Users\HP\source\repos\FirstDesktopApp\bin\Debug\FirstDesktopApp.exe
+C:\Users\HP\source\repos\FirstDesktopApp\bin\Debug\FirstDesktopApp.pdb
+C:\Users\HP\source\repos\FirstDesktopApp\obj\Debug\FirstDesktopApp.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\FirstDesktopApp\obj\Debug\FirstDesktopApp.Properties.Resources.resources
+C:\Users\HP\source\repos\FirstDesktopApp\obj\Debug\FirstDesktopApp.csproj.GenerateResource.cache
+C:\Users\HP\source\repos\FirstDesktopApp\obj\Debug\FirstDesktopApp.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\FirstDesktopApp\obj\Debug\FirstDesktopApp.exe
+C:\Users\HP\source\repos\FirstDesktopApp\obj\Debug\FirstDesktopApp.pdb
+C:\Users\HP\source\repos\FirstDesktopApp\obj\Debug\FirstDesktopApp.Form1.resources
