@@ -51,12 +51,12 @@
     <Compile Include="DL\CandidateDL.cs" />
     <Compile Include="DL\PersonDL.cs" />
     <Compile Include="DL\StaffDL.cs" />
+    <Compile Include="Extras\Date.cs" />
     <Compile Include="Extras\Time.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UI\CandidateUI.cs" />
     <Compile Include="UI\PersonUI.cs" />
-    <Compile Include="UI\Staff.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

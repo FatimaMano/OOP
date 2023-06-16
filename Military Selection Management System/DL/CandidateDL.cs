@@ -8,9 +8,19 @@ namespace Military_Selection_Management_System.DL
 {
     class CandidateDL
     {
+        public static List<Candidate> candidatesList = new Candidate();
         public static void AddEducationInformation()
         {
 
         }
+        public static void AddCandidate(Candidate candidate)
+        {
+            candidatesList.Add(candidate);
+        }
+        public static void DeleteCandidate(Candidate candidate) 
+        {
+            candidatesList.Remove(candidate);
+        }
+
     }
 }

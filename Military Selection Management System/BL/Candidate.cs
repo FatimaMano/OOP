@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Military_Selection_Management_System.UI;
 namespace Military_Selection_Management_System.BL
 {
-    class Candidate : Person
+    public class Candidate : Person
     {
         //Attributes
         private string Allergies;

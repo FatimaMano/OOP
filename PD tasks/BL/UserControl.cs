@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 namespace PD_tasks.BL
 {
-    class UserControl
+    class UserControl : Custom_Control
     {
         public void DataBind()
         {

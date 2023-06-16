@@ -10,5 +10,10 @@ namespace Military_Selection_Management_System.Extras
     {
         public int hours;
         public int minutes;
+        public Time(int hours, int minutes)
+        {
+            this.hours = hours;
+            this.minutes = minutes;
+        }
     }
 }

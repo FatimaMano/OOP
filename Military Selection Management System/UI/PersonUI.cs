@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Military_Selection_Management_System.BL;
+using Military_Selection_Management_System.DL;
 namespace Military_Selection_Management_System.UI
 {
     class PersonUI
@@ -40,10 +41,40 @@ namespace Military_Selection_Management_System.UI
             Person p = new Person(name, password,address,age,Number,emailaddress,role);
             return p;
         }
-        public static 
-
-
-
+        public static void subMenuBeforeMainMenu(string submenu)
+        {
+            string message = submenu + " Menu";
+            Console.WriteLine(message);
+            Console.WriteLine("------------------------");
+            Console.ReadKey();
+        }
+        public static void subMenu(string submenu)
+        {
+            string message = "Main Menu >" + submenu;
+            Console.WriteLine();
+            Console.WriteLine("------------------------");
+            Console.ReadKey();
+        }
+        public static void ViewTopCandidates()
+        {
+            Console.WriteLine("Total Registered Candidates \t {0}", countUsers);
+            Console.WriteLine("Total Selected Candidates are 10");
+            Console.WriteLine("Name \t  Age\t  Performance\t  ");
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine("{0} \t {1} \t {2} \t", TopCandidatesName[i], TopCandidatesAge[i], TopCandidatesResult[i]);
+            }
+            Console.Readkey();
+        }
+        public static void ShowReport()
+        {
+            Console.WriteLine("Total Registered Candidates \t {0}", countUsers);
+            Console.WriteLine("Name \t Age\t Performance\\t");
+            foreach (Candidate candidate in CandidateDL.candidatesList  )
+            {
+                Console.WriteLine("{0} \t {1} \t {2} \t", namesCandidates[idx], agesCandidates[idx], SelectionStatus[idx]);
+            }
+        }
 
         public static bool isValidAge(int age)
         {

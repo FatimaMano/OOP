@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Military_Selection_Management_System.BL
 {
-    class Person
+    public class Person
     {
 		protected string name;
 		protected string password;

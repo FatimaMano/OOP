@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Military_Selection_Management_System.BL
 {
-    class Admin : Staff
+    public class Admin : Staff
     {
         public Admin(string name,string password) : base(name,password)
         {
