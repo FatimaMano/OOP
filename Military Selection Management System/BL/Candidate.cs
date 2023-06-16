@@ -8,6 +8,7 @@ namespace Military_Selection_Management_System.BL
 {
     class Candidate : Person
     {
+        //Attributes
         private string Allergies;
         private string Treatments;
         private string complain;
@@ -20,7 +21,7 @@ namespace Military_Selection_Management_System.BL
         private int Weight;
         private string SelectionStatus;
         private int count;
-
+        // Constructors
         public Candidate(string name, string password) : base(name, password)
         {
 
@@ -30,25 +31,74 @@ namespace Military_Selection_Management_System.BL
 
 
         }
+        // Getter Setters
 
-        public static void setName(Candidate candidate)
+        public void setAcademicTest(int AcademicTest)
         {
-            candidate.name = PersonUI.isAlpha(Console.ReadLine());
+            this.AcademicTest = AcademicTest;
         }
 
-        public static  void setPassword(Candidate candidate)
+        public void setIntelligenceTest(int IntelligenceTest)
         {
-            candidate.password = Console.ReadLine();
+            this.IntelligenceTest = IntelligenceTest;
         }
 
-        public static void setAcademicTest(Candidate candidate)
+        public int getAcademicTest(int AcademicTest)
         {
-            candidate.AcademicTest = PersonUI.IntegerValidation();
+            return AcademicTest;
         }
 
-        public static void setIntelligenceTest(Candidate candidate)
+        public int getIntelligenceTest(int IntelligenceTest)
         {
-            candidate.IntelligenceTest = PersonUI.IntegerValidation();
+            return IntelligenceTest;
+        }
+        public string getAllergies()
+        {
+            return Allergies;
+        }
+        public string getTreatments()
+        {
+            return Treatments;
+        }
+        public string getcomplain()
+        {
+            return Treatments;
+        }
+        public float getMatricMarks()
+        {
+            return MatricMarks;
+        }
+        public float getInterMarksPart()
+        {
+            return InterMarksPart;
+        }
+        public float getCGPA()
+        {
+            return CGPA;
+        }
+        public int getHeight()
+        {
+            return Height;
+        }
+        public void setWeight(int weight)
+        {
+            this.Weight = weight;
+        }
+        public void setSelectionStatus(string SelectionStatus)
+        {
+            this.SelectionStatus = SelectionStatus;
+        }
+        public string getSelectionStatus()
+        {
+            return SelectionStatus;
+        }
+        public int getcount()
+        {
+            return count;
+        }
+        public void setcount(int count)
+        {
+            this.count = count;
         }
 
     }

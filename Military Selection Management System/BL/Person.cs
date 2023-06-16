@@ -30,5 +30,64 @@ namespace Military_Selection_Management_System.BL
 			this.name = name;
 			this.password = password;
         }
+
+		public void setName(string name)
+		{
+			this.name = name;
+		}
+
+		public void setPassword(string password)
+		{
+			this.password = password;
+		}
+		public void setAge(int age)
+        {
+			this.age = age;
+        }
+		public void setphoneNumber(double phoneNumber)
+		{
+			this.phoneNumber = phoneNumber;
+		}
+		public void setaddress(string address)
+		{
+			this.address = address;
+		}
+		public void setemailAddress(string emailaddress)
+        {
+			this.emailAddress = emailaddress;
+        }
+		public void setRole(string role)
+        {
+			this.role = role;
+        }
+		public string getName()
+		{
+			return name;
+		}
+
+		public string getPassword()
+		{
+			return password;
+		}
+		public int getAge()
+		{
+			return age;
+		}
+		public double getphoneNumber()
+		{
+			return phoneNumber;
+		}
+		public string getaddress()
+		{
+			return address;
+		}
+		public string getemailAddress()
+		{
+			return emailAddress;
+		}
+		public string setRole()
+		{
+			return role;
+		}
 	}
 }
