@@ -68,11 +68,11 @@ namespace Military_Selection_Management_System.UI
         }
         public static void ShowReport()
         {
-            Console.WriteLine("Total Registered Candidates \t {0}", countUsers);
+            Console.WriteLine("Total Registered Candidates \t {0}", CandidateDL.candidatesList.Count);
             Console.WriteLine("Name \t Age\t Performance\\t");
-            foreach (Candidate candidate in CandidateDL.candidatesList  )
+            foreach (Candidate candidate in CandidateDL.candidatesList)
             {
-                Console.WriteLine("{0} \t {1} \t {2} \t", namesCandidates[idx], agesCandidates[idx], SelectionStatus[idx]);
+                Console.WriteLine("{0} \t {1} \t {2} \t", candidate.getName(),candidate.getAge(),candidate.getSelectionStatus());
             }
         }
 
