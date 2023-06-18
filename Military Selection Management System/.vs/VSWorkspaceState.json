@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\BL",
+    "\\DL",
+    "\\UI"
   ],
+  "SelectedNode": "\\DL\\PersonDL.cs",
   "PreviewInSolutionExplorer": false
 }
