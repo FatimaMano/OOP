@@ -10,6 +10,30 @@ namespace Military_Selection_Management_System.UI
 {
     class StaffUI
     {
+        public static int StaffMenu()
+        {
+            int option = 0;
+            do
+            {
+                PersonUI.PrintHeader();
+                PersonUI.subMenu("StaffScreen");
+                Console.WriteLine(" 0. SignIn/SignUp Screen");
+                Console.WriteLine(" 1. To add Candidate");
+                Console.WriteLine(" 2. to View the top candidates");
+                Console.WriteLine(" 3. to Show a report");
+                Console.WriteLine(" 4. to Modify the information of the candidates");
+                Console.WriteLine(" 5. to Delete a candidate");
+                Console.WriteLine(" 6. to Search a student");
+                Console.WriteLine(" 7. to See the complaints by the Students");
+                Console.WriteLine(" 8. Set the test schedule");
+                Console.WriteLine(" 9. View the test schedule");
+                Console.WriteLine(" 10. Update the Test Dates");
+                Console.WriteLine(" 11. Allocate a budget");
+                option = PersonUI.IntegerValidation();
+            }while(option > 11);
+
+            return option; // This line will only be reached if the option is 12
+        }
         public static Test UpdatingTestSchedule(int numTests)
         {
             string TestName;
@@ -17,13 +41,14 @@ namespace Military_Selection_Management_System.UI
             {
                 Console.WriteLine("Enter the name of test {0} : ", i + 1);
                 TestName = Console.ReadLine();
-                isTrueTestName(TestName);
+                Test.isTrueTestName(TestName);
                 DateTime TimeDate = TakeDateTime();
                 Test test = new Test(TimeDate);
                 return test;
             }
+            return null;
         }
-        public DateTime TakeDateTime()
+        public static DateTime TakeDateTime()
         {
             int day = GetValidDay();
             int month = GetValidMonth();
@@ -35,7 +60,7 @@ namespace Military_Selection_Management_System.UI
             return testDateTime;
         }
 
-        private int GetValidDay()
+        private static int GetValidDay()
         {
             Console.WriteLine("Enter the day of the test:");
             int day;
@@ -46,7 +71,7 @@ namespace Military_Selection_Management_System.UI
             return day;
         }
 
-        private int GetValidMonth()
+        private static int GetValidMonth()
         {
             Console.WriteLine("Enter the month of the test:");
             int month;
@@ -57,7 +82,7 @@ namespace Military_Selection_Management_System.UI
             return month;
         }
 
-        private int GetValidYear()
+        private static int GetValidYear()
         {
             Console.WriteLine("Enter the year of the test:");
             int year;
@@ -68,7 +93,7 @@ namespace Military_Selection_Management_System.UI
             return year;
         }
 
-        private int GetValidHour()
+        private static int GetValidHour()
         {
             Console.WriteLine("Enter the hour of the test:");
             int hour;
@@ -79,7 +104,7 @@ namespace Military_Selection_Management_System.UI
             return hour;
         }
 
-        private int GetValidMinute()
+        private static int GetValidMinute()
         {
             Console.WriteLine("Enter the minute of the test:");
             int minute;

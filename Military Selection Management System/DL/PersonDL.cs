@@ -9,14 +9,14 @@ namespace Military_Selection_Management_System.DL
 {
     class PersonDL
     {
-        List<Person> Persons = new List<Person>();
+        public static List<Person> PersonsList = new List<Person>();
         public void AddPerson(Person p)
         {
-            Persons.Add(p);
+            PersonsList.Add(p);
         }
         public void RemovePerson(Person p)
         {
-            Persons.Remove(p);
+            PersonsList.Remove(p);
         }
     }
 }

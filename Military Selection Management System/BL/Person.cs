@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Military_Selection_Management_System.DL;
+using Military_Selection_Management_System.UI;
 namespace Military_Selection_Management_System.BL
 {
     public class Person
@@ -31,7 +32,15 @@ namespace Military_Selection_Management_System.BL
 			this.password = password;
         }
 
-		public void setName(string name)
+        internal PersonDL PersonDL
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public void setName(string name)
 		{
 			this.name = name;
 		}
@@ -57,9 +66,9 @@ namespace Military_Selection_Management_System.BL
 			this.emailAddress = emailaddress;
         }
 		public void setRole(string role)
-        {
+		{
 			this.role = role;
-        }
+		}
 		public string getName()
 		{
 			return name;
@@ -85,9 +94,60 @@ namespace Military_Selection_Management_System.BL
 		{
 			return emailAddress;
 		}
-		public string setRole()
+		public string getRole()
 		{
 			return role;
 		}
-	}
+        // Exist Validating
+        public static bool isPersonExistinList(string name, string password, string role)
+        {
+            foreach (Person person in PersonDL.PersonsList)
+            {
+                if (person.getName() == name && person.getPassword() == password && person.getRole() == role)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public static string Signup(string name, string phoneNumber, string password, int age, string role, string address)
+        {
+            string lowerCaseRole = role.ToLower();
+            if (lowerCaseRole != "candidate" && lowerCaseRole != "staff" && lowerCaseRole != "admin")
+            {
+                return "Invalid role";
+            }
+
+            if (lowerCaseRole == "admin" && isPersonExistinList(name, password, role))
+            {
+                return "Sign in";
+            }
+
+            if (lowerCaseRole == "staff" && isPersonExistinList(name, password, role))
+            {
+                return "Sign in";
+            }
+
+            if (lowerCaseRole == "candidate" && isPersonExistinList(name, password, role))
+            {
+                return "Sign in";
+            }
+
+            if (!PersonUI.isValidPhoneNumber(phoneNumber))
+            {
+                return "Invalid phone number";
+            }
+
+            if (!PersonUI.isValidAge(age))
+            {
+                return "Invalid age";
+            }
+
+            StoreDataBasedOnRole(name, phoneNumber, password, age, role, address, lowerCaseRole);
+
+            return "Success";
+        }
+
+    }
 }

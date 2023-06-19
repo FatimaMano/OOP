@@ -41,6 +41,32 @@ namespace Military_Selection_Management_System.UI
             Person p = new Person(name, password,address,age,Number,emailaddress,role);
             return p;
         }
+        public static void PrintHeader()
+        {
+            Console.Clear();
+            Console.WriteLine("###################################################################################################################################################");
+            Console.SetCursorPosition(4, 2);
+            Console.WriteLine(" _______  __  __  __  __    ");
+            Console.SetCursorPosition(4, 3);
+            Console.WriteLine("|   |   ||__||  ||__||  |_ .---.-..----..--.--.");
+            Console.SetCursorPosition(4, 4);
+            Console.WriteLine("|       ||  ||  ||  ||   _||  _  ||   _||  |  |");
+            Console.SetCursorPosition(4, 5);
+            Console.WriteLine("|__|_|__||__||__||__||____||___._||__|  |___  |");
+            Console.SetCursorPosition(4, 6);
+            Console.WriteLine("                                        |_____|");
+            Console.SetCursorPosition(4, 7);
+            Console.WriteLine(" ____         _              _    _");
+            Console.SetCursorPosition(4, 8);
+            Console.WriteLine("/ ___|   ___ | |  ___   ___ | |_ (_)  ___   _ __");
+            Console.SetCursorPosition(4, 9);
+            Console.WriteLine("\\__\\  / _\\| | / _\\ / __|| __|| | / _ \\ | '_ \\");
+            Console.SetCursorPosition(4, 10);
+            Console.WriteLine(" ___) ||  __/| ||  __/| (__ | |_ | || (_) || | | |");
+            Console.SetCursorPosition(4, 11);
+            Console.WriteLine("|____/ \\___||_|\\___|\\___|\\__||_|\\___/ |_| |_|");
+            Console.WriteLine("###################################################################################################################################################");
+        }
         public static void subMenuBeforeMainMenu(string submenu)
         {
             string message = submenu + " Menu";
@@ -55,26 +81,69 @@ namespace Military_Selection_Management_System.UI
             Console.WriteLine("------------------------");
             Console.ReadKey();
         }
+        public static string Signup(string name, string phoneNumber, string password, int age, string role, string address)
+        {
+            string lowerCaseRole = role.ToLower();
+            if (lowerCaseRole != "candidate" && lowerCaseRole != "staff" && lowerCaseRole != "admin")
+            {
+                return "Invalid role";
+            }
+
+            if (lowerCaseRole == "admin" && NameAdmin == name && passwordAdmin == password)
+            {
+                return "Sign in";
+            }
+
+            if (lowerCaseRole == "staff" && UserExist(name, password, role))
+            {
+                return "Sign in";
+            }
+
+            if (lowerCaseRole == "candidate" && UserExist(name, password, role))
+            {
+                return "Sign in";
+            }
+
+            if (!isValidPhoneNumber(phoneNumber))
+            {
+                return "Invalid phone number";
+            }
+
+            if (!isValidAge(age))
+            {
+                return "Invalid age";
+            }
+
+            StoreDataBasedOnRole(name, phoneNumber, password, age, role, address, lowerCaseRole);
+
+            return "Success";
+        }
+
         public static void ViewTopCandidates()
         {
-            Console.WriteLine("Total Registered Candidates \t {0}", countUsers);
-            Console.WriteLine("Total Selected Candidates are 10");
-            Console.WriteLine("Name \t  Age\t  Performance\t  ");
-            for (int i = 0; i < 10; i++)
+            Console.WriteLine("Total Registered Candidates: {0}", CandidateDL.candidatesList.Count);
+            Console.WriteLine("Total Selected Candidates: 10");
+            Console.WriteLine("Name \t\t Age \t Performance");
+
+            foreach (Candidate candidate in CandidateDL.TopCandidatesList)
             {
-                Console.WriteLine("{0} \t {1} \t {2} \t", TopCandidatesName[i], TopCandidatesAge[i], TopCandidatesResult[i]);
+                Console.WriteLine("{0,-15} {1,-5} {2,-12}", candidate.getName(), candidate.getAge(), candidate.getResult());
             }
-            Console.Readkey();
+
+            Console.ReadLine();
         }
+
         public static void ShowReport()
         {
-            Console.WriteLine("Total Registered Candidates \t {0}", CandidateDL.candidatesList.Count);
-            Console.WriteLine("Name \t Age\t Performance\\t");
+            Console.WriteLine("Total Registered Candidates: {0}", CandidateDL.candidatesList.Count);
+            Console.WriteLine("Name \t\t Age \t Performance");
+
             foreach (Candidate candidate in CandidateDL.candidatesList)
             {
-                Console.WriteLine("{0} \t {1} \t {2} \t", candidate.getName(),candidate.getAge(),candidate.getSelectionStatus());
+                Console.WriteLine("{0,-15} {1,-5} {2,-12}", candidate.getName(), candidate.getAge(), candidate.getSelectionStatus());
             }
         }
+
 
         public static bool isValidAge(int age)
         {
@@ -112,8 +181,6 @@ namespace Military_Selection_Management_System.UI
             } while (!isValidPhoneNumber(phoneNumber));
             return Double.Parse(phoneNumber);
         }
-        public void 
-
 
         public static int FindNumberOfDigits(double number)
         {

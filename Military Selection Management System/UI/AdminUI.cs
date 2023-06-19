@@ -12,12 +12,11 @@ namespace Military_Selection_Management_System.DL
         public static int AdminMenu()
         {
 
-            int option = 0;
-            string check = " ";
-            bool condition = false;
-            while (!condition)
+            int option = 10;
+            do
             {
-                subMenu("AdminScreen");
+                UI.PersonUI.subMenu("AdminScreen");
+                Console.WriteLine("0: SignIn/SignUp Screen");
                 Console.WriteLine("1: To add Candidate");
                 Console.WriteLine("2: to View the top candidates");
                 Console.WriteLine("3: to Show a report");
@@ -27,16 +26,9 @@ namespace Military_Selection_Management_System.DL
                 Console.WriteLine("7: to Update the test results of a student");
                 Console.WriteLine("8: to See the complaints by the Students");
                 Console.WriteLine("9: Set the test schedule");
-                check = Console.ReadLine();
-                bool checkInput = validateInput(check);
-                if (checkInput == true)
-                {
-                    option = int.Parse(check);
-                    condition = true;
-                }
-                return option;
-            }
-            return 0;
+                option = UI.PersonUI.IntegerValidation();
+            } while (option > 9);
+            return option;
         }
     }
 }

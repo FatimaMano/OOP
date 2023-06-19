@@ -21,6 +21,7 @@ namespace Military_Selection_Management_System.BL
         private int Weight;
         private string SelectionStatus;
         private int count;
+        private double Result;
         // Constructors
         public Candidate(string name, string password) : base(name, password)
         {
@@ -31,6 +32,15 @@ namespace Military_Selection_Management_System.BL
 
 
         }
+
+        internal DL.CandidateDL CandidateDL
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         // Getter Setters
 
         public void setAcademicTest(int AcademicTest)
@@ -92,13 +102,13 @@ namespace Military_Selection_Management_System.BL
         {
             return SelectionStatus;
         }
-        public int getcount()
+        public double getResult()
         {
-            return count;
+            return Result;
         }
-        public void setcount(int count)
+        public void setResult(double result)
         {
-            this.count = count;
+            Result = result;
         }
 
     }
