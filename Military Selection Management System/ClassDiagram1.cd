@@ -10,24 +10,18 @@
   <Class Name="Military_Selection_Management_System.BL.Candidate" Collapsed="true">
     <Position X="3.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AQACQAQAhAKAAAAADAIQAAQFQCAESBECABAIAoAAAAA=</HashCode>
+      <HashCode>AQACQAQAhAKAAAAADAIQAAQFQCAESBACABAIAoAAAAA=</HashCode>
       <FileName>BL\Candidate.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="CandidateDL" />
-    </ShowAsAssociation>
   </Class>
   <Class Name="Military_Selection_Management_System.BL.Person" Collapsed="true">
     <Position X="2.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAGAQBAABQAAAAACIABgAAEIECABGAAAGAgAAAIA=</HashCode>
+      <HashCode>AAAAAGAQBAABQAAAAACIABgAAEIECABGAAAEAgAAAIA=</HashCode>
       <FileName>BL\Person.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="PersonDL" />
-    </ShowAsAssociation>
   </Class>
-  <Class Name="Military_Selection_Management_System.BL.Staff" Collapsed="true">
+  <Class Name="Military_Selection_Management_System.BL.Staff">
     <Position X="1.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
@@ -44,7 +38,7 @@
   <Class Name="Military_Selection_Management_System.DL.CandidateDL" Collapsed="true">
     <Position X="5.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAQAAABAABAAAAACAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAAABAABAAAAACAA=</HashCode>
       <FileName>DL\CandidateDL.cs</FileName>
     </TypeIdentifier>
   </Class>

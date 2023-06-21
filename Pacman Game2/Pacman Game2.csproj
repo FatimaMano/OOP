@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9C416466-535E-4D0F-884D-E43570569058}</ProjectGuid>
+    <ProjectGuid>{D38CC767-838B-4693-A0F8-9991FB5E14E7}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Military_Selection_Management_System</RootNamespace>
-    <AssemblyName>Military Selection Management System</AssemblyName>
+    <RootNamespace>Pacman_Game2</RootNamespace>
+    <AssemblyName>Pacman Game2</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,29 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BL\Admin.cs" />
-    <Compile Include="BL\Candidate.cs" />
-    <Compile Include="BL\Person.cs" />
-    <Compile Include="BL\Staff.cs" />
-    <Compile Include="BL\Test.cs" />
-    <Compile Include="DL\CandidateDL.cs" />
-    <Compile Include="DL\PersonDL.cs" />
-    <Compile Include="DL\StaffDL.cs" />
-    <Compile Include="DL\TestDL.cs" />
-    <Compile Include="Extras\Date.cs" />
-    <Compile Include="Extras\Time.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UI\AdminUI.cs" />
-    <Compile Include="UI\CandidateUI.cs" />
-    <Compile Include="UI\PersonUI.cs" />
-    <Compile Include="UI\StaffUI.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="class.cd" />
-    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

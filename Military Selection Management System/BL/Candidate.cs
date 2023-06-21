@@ -33,14 +33,6 @@ namespace Military_Selection_Management_System.BL
 
         }
 
-        internal DL.CandidateDL CandidateDL
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
         // Getter Setters
 
         public void setAcademicTest(int AcademicTest)

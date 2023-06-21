@@ -1,2 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram /> 
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Military_Selection_Management_System.BL.Admin">
+    <Position X="3.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BL\Admin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Military_Selection_Management_System.BL.Candidate">
+    <Position X="5.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQACQAQAhAKAAAAADAIQAAQFQCAESBECABAIAoAAAAA=</HashCode>
+      <FileName>BL\Candidate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Military_Selection_Management_System.BL.Person" Collapsed="true">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAGAQBAABQAAAAACIABgAAEIECABGAAAGAgAAAIA=</HashCode>
+      <FileName>BL\Person.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Military_Selection_Management_System.BL.Staff">
+    <Position X="3.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BL\Staff.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Military_Selection_Management_System.BL.Test" Collapsed="true">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAASAAAAAAAAAACAAAAAAAAAAAEAEAAAAAAAAAAQAAA=</HashCode>
+      <FileName>BL\Test.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

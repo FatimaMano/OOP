@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9C416466-535E-4D0F-884D-E43570569058}</ProjectGuid>
+    <ProjectGuid>{9110FA1D-50E2-4270-888B-D98F0F43485C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Military_Selection_Management_System</RootNamespace>
-    <AssemblyName>Military Selection Management System</AssemblyName>
+    <RootNamespace>Pacman_Game</RootNamespace>
+    <AssemblyName>Pacman Game</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EZInput, Version=1.3.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\EZInput.1.3.2\lib\netstandard2.0\EZInput.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -43,28 +46,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BL\Admin.cs" />
-    <Compile Include="BL\Candidate.cs" />
-    <Compile Include="BL\Person.cs" />
-    <Compile Include="BL\Staff.cs" />
-    <Compile Include="BL\Test.cs" />
-    <Compile Include="DL\CandidateDL.cs" />
-    <Compile Include="DL\PersonDL.cs" />
-    <Compile Include="DL\StaffDL.cs" />
-    <Compile Include="DL\TestDL.cs" />
-    <Compile Include="Extras\Date.cs" />
-    <Compile Include="Extras\Time.cs" />
+    <Compile Include="GL\Cell.cs" />
+    <Compile Include="GL\GameDirection.cs" />
+    <Compile Include="GL\GameObjectType.cs" />
+    <Compile Include="GL\Grid.cs" />
+    <Compile Include="GL\Object.cs" />
+    <Compile Include="GL\Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UI\AdminUI.cs" />
-    <Compile Include="UI\CandidateUI.cs" />
-    <Compile Include="UI\PersonUI.cs" />
-    <Compile Include="UI\StaffUI.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="class.cd" />
-    <None Include="ClassDiagram1.cd" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Maze.txt" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

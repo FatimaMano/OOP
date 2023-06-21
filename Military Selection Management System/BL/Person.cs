@@ -32,14 +32,6 @@ namespace Military_Selection_Management_System.BL
 			this.password = password;
         }
 
-        internal PersonDL PersonDL
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
         public void setName(string name)
 		{
 			this.name = name;
