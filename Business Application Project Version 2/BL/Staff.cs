@@ -8,7 +8,7 @@ namespace Business_Application_Project_Version_2.BL
 {
     class Staff : Person
     {
-        Staff(string name, string password, string address, int age, int phoneNumber, string emailAddress, string role) : base(name,password,address,age,phoneNumber,emailAddress,role)
+        Staff(string name,string password, string address, int age, int phoneNumber, string emailAddress, string role) : base(name,password,address,age,phoneNumber,emailAddress,role)
         {
 
         }

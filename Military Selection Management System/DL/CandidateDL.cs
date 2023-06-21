@@ -11,10 +11,6 @@ namespace Military_Selection_Management_System.DL
     {
         public static List<Candidate> candidatesList = new List<Candidate>();
         public static List<Candidate> TopCandidatesList = new List<Candidate>();
-        public static void AddEducationInformation()
-        {
-
-        }
         public static void AddCandidate(Candidate candidate)
         {
             candidatesList.Add(candidate);

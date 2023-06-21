@@ -22,10 +22,6 @@ namespace Military_Selection_Management_System
             LoadDataFromAdminFile();
             int option = 4;
             Console.Clear();
-            do
-            {
-
-            }
             while (option != 0)
             {
                 option = LogMenuScreen();
