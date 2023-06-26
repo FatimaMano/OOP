@@ -66,6 +66,11 @@
     <None Include="class.cd" />
     <None Include="ClassDiagram1.cd" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="File Storage\Admin.txt" />
+    <Content Include="File Storage\AdminPreparedData.txt" />
+    <Content Include="File Storage\CandidateData.txt" />
+    <Content Include="File Storage\EmployeesData.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

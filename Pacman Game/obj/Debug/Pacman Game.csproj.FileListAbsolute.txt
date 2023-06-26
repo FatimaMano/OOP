@@ -1,0 +1,11 @@
+C:\Users\HP\source\repos\Pacman Game\obj\Debug\Pacman Game.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\Pacman Game\obj\Debug\Pacman Game.csproj.SuggestedBindingRedirects.cache
+C:\Users\HP\source\repos\Pacman Game\obj\Debug\Pacman Game.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\Pacman Game\bin\Debug\Pacman Game.exe.config
+C:\Users\HP\source\repos\Pacman Game\bin\Debug\Pacman Game.exe
+C:\Users\HP\source\repos\Pacman Game\bin\Debug\Pacman Game.pdb
+C:\Users\HP\source\repos\Pacman Game\bin\Debug\EZInput.dll
+C:\Users\HP\source\repos\Pacman Game\bin\Debug\EZInput.xml
+C:\Users\HP\source\repos\Pacman Game\obj\Debug\Pacman Game.csproj.CopyComplete
+C:\Users\HP\source\repos\Pacman Game\obj\Debug\Pacman Game.exe
+C:\Users\HP\source\repos\Pacman Game\obj\Debug\Pacman Game.pdb

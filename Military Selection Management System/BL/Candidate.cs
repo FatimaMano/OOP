@@ -23,6 +23,10 @@ namespace Military_Selection_Management_System.BL
         private int count;
         private double Result;
         // Constructors
+        public Candidate()
+        {
+
+        }
         public Candidate(string name, string password) : base(name, password)
         {
 
@@ -34,23 +38,12 @@ namespace Military_Selection_Management_System.BL
         }
 
         // Getter Setters
-
-        public void setAcademicTest(int AcademicTest)
-        {
-            this.AcademicTest = AcademicTest;
-        }
-
-        public void setIntelligenceTest(int IntelligenceTest)
-        {
-            this.IntelligenceTest = IntelligenceTest;
-        }
-
-        public int getAcademicTest(int AcademicTest)
+        public int getAcademicTest()
         {
             return AcademicTest;
         }
 
-        public int getIntelligenceTest(int IntelligenceTest)
+        public int getIntelligenceTest()
         {
             return IntelligenceTest;
         }
@@ -82,13 +75,9 @@ namespace Military_Selection_Management_System.BL
         {
             return Height;
         }
-        public void setWeight(int weight)
+        public int getWeight()
         {
-            this.Weight = weight;
-        }
-        public void setSelectionStatus(string SelectionStatus)
-        {
-            this.SelectionStatus = SelectionStatus;
+            return Weight;
         }
         public string getSelectionStatus()
         {
@@ -98,9 +87,52 @@ namespace Military_Selection_Management_System.BL
         {
             return Result;
         }
+        //Setters
+        public void setMatricMarks(float MatricMarks)
+        {
+            this.MatricMarks = MatricMarks;
+        }
+        public void setInterMarksPart(float InterMarksPart)
+        {
+            this.InterMarksPart = InterMarksPart;
+        }
+        public void setHeight(int height)
+        {
+            this.Height = height;
+        }
+        public void setCGPA(float CGPA)
+        {
+            this.CGPA = CGPA;
+        }
+        public void setComplain(string complain)
+        {
+            this.complain = complain;
+        }
+        public void setAllergies(string Allergies)
+        {
+            this.Allergies = Allergies;
+
+        }
+        public void setWeight(int weight)
+        {
+            this.Weight = weight;
+        }
+        public void setSelectionStatus(string SelectionStatus)
+        {
+            this.SelectionStatus = SelectionStatus;
+        }
         public void setResult(double result)
         {
             Result = result;
+        }
+        public void setAcademicTest(int AcademicTest)
+        {
+            this.AcademicTest = AcademicTest;
+        }
+
+        public void setIntelligenceTest(int IntelligenceTest)
+        {
+            this.IntelligenceTest = IntelligenceTest;
         }
 
     }

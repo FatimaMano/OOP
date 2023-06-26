@@ -9,40 +9,44 @@ namespace Pacman_Game.GL
 {
     class Grid
     {
-        public Cell[][] gameCells;
-        public int Rows;
-        public int Cols;
+         Cell[,] gameCells;
+         int Rows;
+         int Cols;
         public Grid(string filename,int rows, int cols)
-        {
-            Rows = rows;
-            Cols = cols;
+        {//Numbers of rows and cols should load from the text file 
+            this.Rows = rows;
+            this.Cols = cols;
+            this.gameCells = new Cell[Rows,Cols];
             LoadGrid(filename);
         }
+        public Cell getCell(int x,int y)
+        {
+            return gameCells[x, y];
+        }
+        public int rows { get => Rows; set => Rows = value; }
+        public int cols { get => Cols; set => Cols = value; }
         private void LoadGrid(string filename)
         {
             StreamReader file = new StreamReader(filename);
             string record;
-            for(int row = 0; row < gameCells.Length; row++)
+            for(int row = 0; row < this.Rows; row++)
             {
                 record= file.ReadLine();
-                for(int col = 0;col< gameCells.Length;col++)
+                for(int col = 0;col< this.Cols;col++)
                 {
                     Cell cell = new Cell(row,col,this);
+                   /* Console.Write(row + "," + col);
+                    Console.ReadLine();*/
                     char displayCharacter = record[col];
-                    GameObjectType type = Object.GetGameObjectType(displayCharacter);
-                    Object gameObject = new Object(type, displayCharacter);
+                    GameObjectType type = GameObject.GetGameObjectType(displayCharacter);
+                    GameObject gameObject = new GameObject(type, displayCharacter);
                     cell.CurrentGameObject = gameObject;
-                    gameCells[row][col] = cell;
+                    gameCells[row,col] = cell;
 
 
                 }
             }
             file.Close();
-        }
-        public Cell getCell(int row, int col) 
-        {
-            Cell cell = new Cell(row, col, this);
-            return cell;
         }
     }
 }

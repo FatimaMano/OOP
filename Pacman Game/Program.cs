@@ -13,14 +13,13 @@ namespace PacMan
     {
         static void Main(string[] args)
         {
-            Grid grid = new Grid("maze.txt", 23, 71);
+            Grid grid = new Grid("C:\\Users\\HP\\source\\repos\\Pacman Game\\Maze.txt", 24, 69);
             Cell start = new Cell(12, 22, grid);
             Player pacman = new Player('P', start);
             printMaze(grid);
-            //printGameObject(pacman);
+            printGameObject(pacman);
 
-
-            /*bool gameRunning = true;
+            bool gameRunning = true;
             while (gameRunning)
             {
                 Thread.Sleep(90);
@@ -44,28 +43,27 @@ namespace PacMan
                     moveGameObject(pacman, GameDirection.LEFT);
                 }
             }
-            */
         }
-        static void clearGameCellContent(Cell gameCell,Object newGameObject)
+        static void clearGameCellContent(Cell gameCell,GameObject newGameObject)
         {
             gameCell.CurrentGameObject = newGameObject;
-            Console.SetCursorPosition(gameCell.y, gameCell.x);
+            Console.SetCursorPosition(gameCell.Y, gameCell.X);
             Console.Write(newGameObject.DisplayCharacter);
 
         }
-        static void printGameObject(Object gameObject)
+        static void printGameObject(GameObject gameObject)
         {
             Console.SetCursorPosition(gameObject.CurrentCell.Y, gameObject.CurrentCell.X);
             Console.Write(gameObject.DisplayCharacter);
 
         }
 
-        static void moveGameObject(Object gameObject, GameDirection direction)
+        static void moveGameObject(GameObject gameObject, GameDirection direction)
         {
             Cell nextCell = gameObject.CurrentCell.nextCell(direction);
             if (nextCell != null)
             {
-                Object newGO = new Object(GameObjectType.NONE, ' ');
+                GameObject newGO = new GameObject(GameObjectType.NONE, ' ');
                 Cell currentCell = gameObject.CurrentCell;
                 clearGameCellContent(currentCell, newGO);
                 gameObject.CurrentCell = nextCell;
@@ -75,10 +73,9 @@ namespace PacMan
 
         static void printMaze(Grid grid)
         {
-            for (int x = 0; x < grid.Rows; x++)
+            for (int x = 0; x < grid.rows; x++)
             {
-                int abc = 0;
-                for (int y = 0; y < grid.Cols; y++)
+                for (int y = 0; y < grid.cols; y++)
                 {
                     Cell cell = grid.getCell(x, y);
                     printCell(cell);
@@ -89,7 +86,7 @@ namespace PacMan
 
         static void printCell(Cell cell)
         {
-            Console.SetCursorPosition(cell.y, cell.x);
+            Console.SetCursorPosition(cell.Y, cell.X);
             Console.Write(cell.CurrentGameObject.DisplayCharacter);
         }
 

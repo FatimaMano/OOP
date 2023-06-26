@@ -7,17 +7,15 @@ using System.Threading.Tasks;
 
 namespace Pacman_Game.GL
 {
-    class Player : Object
+    class Player : GameObject
     {
-        public Player(GameObjectType type, char DisplayCharacter) : base(type, DisplayCharacter)
+        public Player(char displayCharacter,Cell startCell):base( GameObjectType.PLAYER, displayCharacter) 
         {
+            this.currentCell = startCell;
         }
         public Cell move(GameDirection direction)
         {
-            if(direction == GameDirection.UP)
-            { 
-                Console.WriteLine()
-            }
+            return this.CurrentCell.nextCell(direction);
         }
     }
 }

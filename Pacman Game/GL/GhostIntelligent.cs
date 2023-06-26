@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace Pacman_Game.GL
 {
-       enum GameObjectType
-        {
-        WALL,PLAYER,ENEMY,REWARD,NONE
-        }
+     class GhostIntelligent
+    {
+    }
 }

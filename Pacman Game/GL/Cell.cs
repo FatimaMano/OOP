@@ -6,36 +6,71 @@ using System.Threading.Tasks;
 
 namespace Pacman_Game.GL
 {
-    class Cell : Grid
+    class Cell
     {
-        public int x;
-        public int y;
-        public Object CurrentGameObject;
-        public Grid gameGrid;
+        private int x;
+        private int y;
+        private GameObject currentGameObject;
+        private Grid gameGrid;
         public Cell(int x, int y, Grid grid)
         {
             this.x = x;
             this.y = y;
             this.gameGrid = grid;
         }
-        public int nextCell(GameDirection direction)
+        public Cell nextCell(GameDirection direction)
         {
-            if(direction == GameDirection.UP)
+            if (direction == GameDirection.LEFT)
             {
-                return x-1;
+                if(this.y>0)
+                {
+                    Cell ncell = gameGrid.getCell(x, y - 1);
+                    if (ncell.CurrentGameObject.GameObjectType != GameObjectType.WALL)
+                    {
+                        return ncell;
+                    }
+                }
             }
-            else if (direction == GameDirection.DOWN)
+            if(direction == GameDirection.RIGHT)
             {
-                return x + 1;
+                if(this.y < gameGrid.cols -1 )
+                {
+                    Cell ncell = gameGrid.getCell(this.x, this.y + 1);
+                    if(ncell.CurrentGameObject.GameObjectType != GameObjectType.WALL)
+                    {
+                        return ncell;
+                    }
+
+                }
             }
-            else if (direction == GameDirection.LEFT)
+            if (direction == GameDirection.UP)
             {
-                return y-1;
+                if(this.x > 0)
+                {
+                    Cell ncell = gameGrid.getCell(this.x-1,this.y);
+                    if(ncell.CurrentGameObject.GameObjectType != GameObjectType.WALL)
+                    {
+                        return ncell;
+                    }
+                }
             }
-            else
+            if (direction == GameDirection.DOWN)
             {
-                return y+1;
+                if(this.x < gameGrid.rows-1)
+                {
+                    Cell ncell = gameGrid.getCell(this.x + 1, this.y);
+                    if(ncell.CurrentGameObject.GameObjectType != GameObjectType.WALL)
+                    {
+                        return ncell;
+                    }
+                }
             }
+            return this;
         }
+        public int X { get => x; set => x= value; }
+        public  int Y { get => y; set => y= value; }
+        public GameObject CurrentGameObject { get => currentGameObject; set => currentGameObject = value; }
+
+
     }
 }

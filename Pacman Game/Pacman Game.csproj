@@ -49,8 +49,13 @@
     <Compile Include="GL\Cell.cs" />
     <Compile Include="GL\GameDirection.cs" />
     <Compile Include="GL\GameObjectType.cs" />
+    <Compile Include="GL\Ghost.cs" />
+    <Compile Include="GL\GhostHorizontal.cs" />
+    <Compile Include="GL\GhostIntelligent.cs" />
+    <Compile Include="GL\GhostRandom.cs" />
+    <Compile Include="GL\GhostVertical.cs" />
     <Compile Include="GL\Grid.cs" />
-    <Compile Include="GL\Object.cs" />
+    <Compile Include="GL\GameObject.cs" />
     <Compile Include="GL\Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

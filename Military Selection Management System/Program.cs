@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -813,7 +814,6 @@ namespace Military_Selection_Management_System
                 StoreInCandidateFile(address);
 
             }
-            /*
             else if (lowercaserole == "staff")
             {
                 // Here Data is store in array and File both in their respective position
@@ -831,7 +831,6 @@ namespace Military_Selection_Management_System
                 AddressesStaff[countStaff] = address;
                 storeInStaffFile(address);
             }
-            */
             else if (lowercaserole == "admin")
             {
                 // Here Data is store in array and File both in their respective position
@@ -868,7 +867,6 @@ namespace Military_Selection_Management_System
                     file.WriteLine();
                 }
             }
-            /*
             else if (filename == "EmployeesData")
             {
                 using (StreamWriter file = new StreamWriter("EmployeesData.txt", true))
@@ -876,9 +874,7 @@ namespace Military_Selection_Management_System
                     file.WriteLine();
                 }
             }
-            */
         }
-
         static void LoadDataFromAdminFile()
         {
             string path = @"D:\PF github\Management Group\Admin.txt";
@@ -901,18 +897,7 @@ namespace Military_Selection_Management_System
             }
         }
 
-        static string getField(string line, int index)
-        {
-            string[] fields = line.Split(',');
-            if (fields.Length >= index)
-            {
-                return fields[index - 1];
-            }
-            else
-            {
-                return "";
-            }
-        }
+
 
         // Supported Functions
         static void PrintHeader()

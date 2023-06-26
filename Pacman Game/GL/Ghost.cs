@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace Pacman_Game.GL
 {
-       enum GameObjectType
+    class Ghost
+    {
+        public abstract Cell Move()
         {
-        WALL,PLAYER,ENEMY,REWARD,NONE
+            return new Cell();  
         }
+
+    }
 }

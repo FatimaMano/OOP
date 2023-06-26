@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace Pacman_Game.GL
 {
-    class Object
+    class GameObject
     {
-        public char DisplayCharacter;
+        public char displayCharacter;
         public Cell CurrentCell;
-        public Enum GameObjectType;
-        public Object(GameObjectType type, char DisplayCharacter)
+        public GameObjectType gameObjectType;
+        public GameObject(GameObjectType type, char DisplayCharacter)
         {
-            GameObjectType = type;
-            this.DisplayCharacter = DisplayCharacter;
+            gameObjectType = type;
+            this.displayCharacter = DisplayCharacter;
         }
         public static GameObjectType GetGameObjectType(char displayCharacter)
         {
@@ -39,11 +39,15 @@ namespace Pacman_Game.GL
                 return GL.GameObjectType.NONE;
             }
         }
-        public void MoveGameObject(GameObjectType type, GameDirection direction)
+        public char DisplayCharacter { get => displayCharacter; set => displayCharacter = value; }
+        public GameObjectType GameObjectType { get => gameObjectType; set => gameObjectType = value; }
+        public Cell currentCell
         {
-            if(type == GL.GameObjectType.PLAYER) 
+            get => CurrentCell;
+            set
             {
-                Player.move(direction);
+                CurrentCell = value;
+                CurrentCell.CurrentGameObject = this;
             }
         }
     }

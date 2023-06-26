@@ -16,7 +16,11 @@ namespace Military_Selection_Management_System.BL
 		protected double phoneNumber;
 		protected string emailAddress;
 		protected string role;
-		public Person(string name, string password, string address, int age, double phoneNumber, string emailAddress, string role)
+        public Person()
+        {
+
+        }
+        public Person(string name, string password, string address, int age, double phoneNumber, string emailAddress, string role)
 		{
 			this.name = name;
 			this.password = password;
