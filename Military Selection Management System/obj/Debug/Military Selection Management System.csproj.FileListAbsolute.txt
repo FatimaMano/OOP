@@ -1,0 +1,8 @@
+C:\Users\HP\source\repos\Military Selection Management System\obj\Debug\Military Selection Management System.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\Military Selection Management System\obj\Debug\Military Selection Management System.csproj.SuggestedBindingRedirects.cache
+C:\Users\HP\source\repos\Military Selection Management System\obj\Debug\Military Selection Management System.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\Military Selection Management System\bin\Debug\Military Selection Management System.exe.config
+C:\Users\HP\source\repos\Military Selection Management System\bin\Debug\Military Selection Management System.exe
+C:\Users\HP\source\repos\Military Selection Management System\bin\Debug\Military Selection Management System.pdb
+C:\Users\HP\source\repos\Military Selection Management System\obj\Debug\Military Selection Management System.exe
+C:\Users\HP\source\repos\Military Selection Management System\obj\Debug\Military Selection Management System.pdb

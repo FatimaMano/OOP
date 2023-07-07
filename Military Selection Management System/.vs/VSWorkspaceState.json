@@ -2,8 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\BL",
+    "\\DL",
     "\\UI"
   ],
-  "SelectedNode": "\\ClassDiagram1.cd",
+  "SelectedNode": "\\BL\\Person.cs",
   "PreviewInSolutionExplorer": false
 }

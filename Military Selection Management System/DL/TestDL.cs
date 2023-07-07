@@ -6,11 +6,11 @@ namespace Military_Selection_Management_System.DL
 {
 	class TestDL
 	{
-        private List<Test> testList = new List<Test>();
-		public void addIntoTestList(Test test)
-		{
+        public static List<Test> testList = new List<Test>();
+        public static void addIntoTestList(Test test)
+        {
             testList.Add(test);
-		}
+        }
     }
 
 }

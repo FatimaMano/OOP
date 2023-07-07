@@ -45,7 +45,9 @@
   <ItemGroup>
     <Compile Include="BL\Admin.cs" />
     <Compile Include="BL\Candidate.cs" />
+    <Compile Include="Extras\Options.cs" />
     <Compile Include="BL\Person.cs" />
+    <Compile Include="Extras\Roles.cs" />
     <Compile Include="BL\Staff.cs" />
     <Compile Include="BL\Test.cs" />
     <Compile Include="DL\CandidateDL.cs" />
@@ -60,6 +62,7 @@
     <Compile Include="UI\CandidateUI.cs" />
     <Compile Include="UI\PersonUI.cs" />
     <Compile Include="UI\StaffUI.cs" />
+    <Compile Include="UI\TestUI.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

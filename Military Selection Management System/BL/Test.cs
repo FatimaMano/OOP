@@ -9,10 +9,20 @@ namespace Military_Selection_Management_System.BL
     class Test
     {
         private static List<string> TestNames = new List<string> { "Running", "Sit ups", "Push Ups", "logmenuChin ups", "Ditch Crossing" };
+        private string TestName;
         private DateTime TestDateTime;
-        public Test(DateTime TestDateTime)
+        public Test(string TestName,DateTime TestDateTime)
         {
+            this.TestName = TestName;
             this.TestDateTime = TestDateTime;
+        }
+        public void setTestName(string TestName)
+        {
+            this.TestName = TestName;
+        }
+        public string getTestName()
+        {
+            return this.TestName;
         }
         public void setTestDateTime(DateTime dateTime)
         {

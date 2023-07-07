@@ -1,95 +1,130 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Military_Selection_Management_System.BL.Admin" Collapsed="true">
-    <Position X="1.25" Y="3.25" Width="1.5" />
+    <Position X="0.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>BL\Admin.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Military_Selection_Management_System.BL.Candidate" Collapsed="true">
-    <Position X="3.5" Y="1.75" Width="1.5" />
+    <Position X="2.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AQACQAQAhAKAAAAADAIQAAQFQCAESBACABAIAoAAAAA=</HashCode>
+      <HashCode>CQACQAQAhAKAAAgADIKQAAQlQCAESBAOABAIAoAAAEA=</HashCode>
       <FileName>BL\Candidate.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Military_Selection_Management_System.BL.Person" Collapsed="true">
-    <Position X="2.5" Y="0.5" Width="1.5" />
+    <Position X="1.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAGAQBAABQAAAAACIABgAAEIECABGAAAEAgAAAIA=</HashCode>
+      <HashCode>AAAAAGCQBAABwACAAACIABgAAEIECABGAAAEAgAACIA=</HashCode>
       <FileName>BL\Person.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Military_Selection_Management_System.BL.Staff">
-    <Position X="1.25" Y="1.75" Width="1.5" />
+  <Class Name="Military_Selection_Management_System.BL.Staff" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>BAAAABAAAAABAAAAAAACAAAEAAAAAAAAAACAIAACAAA=</HashCode>
       <FileName>BL\Staff.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Military_Selection_Management_System.BL.Test" Collapsed="true">
-    <Position X="3.25" Y="3.25" Width="1.5" />
+    <Position X="5.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAASAAAAAAAAAACAAAAAAAAAAAEAEAAAAAAAAAAQAAA=</HashCode>
+      <HashCode>AAASAAAAAAAAACCAAAAAAAAAAAEAEAAAAAAAAAIQAAA=</HashCode>
       <FileName>BL\Test.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Military_Selection_Management_System.DL.CandidateDL" Collapsed="true">
-    <Position X="5.25" Y="0.5" Width="1.5" />
+    <Position X="5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAAABAABAAAAACAA=</HashCode>
+      <HashCode>AAAAAAIAAAAAAAAgAAAAAAAAAAAAAAABAABAAAQAGCA=</HashCode>
       <FileName>DL\CandidateDL.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Military_Selection_Management_System.DL.PersonDL" Collapsed="true">
-    <Position X="7" Y="0.5" Width="1.5" />
+    <Position X="6.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAACAAAAAAAAAACAAAAAAAAAAAAAAEA=</HashCode>
+      <HashCode>AACAAAAAAAAAAAACAAAAAAoAAACAAAAAAEAAAAAAAEA=</HashCode>
       <FileName>DL\PersonDL.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Military_Selection_Management_System.DL.StaffDL" Collapsed="true">
-    <Position X="5.25" Y="1.25" Width="1.5" />
+    <Position X="5" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAQA=</HashCode>
       <FileName>DL\StaffDL.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Military_Selection_Management_System.DL.TestDL" Collapsed="true">
-    <Position X="7" Y="1.25" Width="1.5" />
+    <Position X="6.75" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAEAAAAAA=</HashCode>
       <FileName>DL\TestDL.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Military_Selection_Management_System.DL.AdminUI" Collapsed="true">
-    <Position X="5.25" Y="2.25" Width="1.5" />
+  <Class Name="Military_Selection_Management_System.Extras.Date" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <HashCode>AAAkAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Extras\Date.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Military_Selection_Management_System.Extras.Time" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Extras\Time.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Military_Selection_Management_System.UI.AdminUI" Collapsed="true">
+    <Position X="4.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAACAIAAAAAAA=</HashCode>
       <FileName>UI\AdminUI.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Military_Selection_Management_System.UI.CandidateUI" Collapsed="true">
-    <Position X="7" Y="2.25" Width="1.5" />
+    <Position X="6.25" Y="4.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAA=</HashCode>
+      <HashCode>ACQAQAAAAAAQgoEQAAAAAQBBAAAAAAUAEAAgAIAAAAA=</HashCode>
       <FileName>UI\CandidateUI.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Military_Selection_Management_System.UI.PersonUI" Collapsed="true">
-    <Position X="5.25" Y="3.25" Width="1.5" />
+    <Position X="8" Y="4.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AIAAAAAABAABCoIAAAQAAAAAAAAADAAAECAABAAAIIA=</HashCode>
+      <HashCode>AIAAAAAAHAABCoIAAAQAAEgBAAACBAAAUAAABAAAAIQ=</HashCode>
       <FileName>UI\PersonUI.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Military_Selection_Management_System.UI.StaffUI" Collapsed="true">
-    <Position X="7" Y="3.25" Width="1.5" />
+    <Position X="4.5" Y="5.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AIEAAAAAAAAAAAgAAEAQAEAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <HashCode>AIEAAAAABAAAAAgAAFAQgEAgAAAAAIBAAAAAAAAAIAA=</HashCode>
       <FileName>UI\StaffUI.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="Military_Selection_Management_System.UI.TestUI" Collapsed="true">
+    <Position X="6.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\TestUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Military_Selection_Management_System.Extras.Options" Collapsed="true">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Extras\Options.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Military_Selection_Management_System.BL.Roles" Collapsed="true">
+    <Position X="2.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAACABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Extras\Roles.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

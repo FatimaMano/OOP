@@ -1,46 +1,98 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
+using System.Net.Mail;
+using System.Net;
+using System.Runtime;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 using Military_Selection_Management_System.BL;
 using Military_Selection_Management_System.DL;
+using System.Security.Policy;
+
 namespace Military_Selection_Management_System.UI
 {
     class PersonUI
     {
-        public Person TakeInputSignIn()
+        public static Person TakeInputSignIn()
         {
-            string name;
-            Console.WriteLine("Enter your Name: ");
-            name = Console.ReadLine();
+            Console.WriteLine("Enter Your ID");
+            string ID = Console.ReadLine();
             Console.WriteLine("Enter your Password: ");
-            string password;
-            password = Console.ReadLine();
-            Person p = new Person(name, password);
+            string password = Console.ReadLine();
+            Person p = new Person(ID,password);
             return p;
         }
-        public Person TakeInputForSignUp(string role)
+        public static Person TakeInputForSignUp(string role)
         {
-            string name;
+            Console.Write("Enter Your ID: ");
+            string ID = Console.ReadLine();
             Console.WriteLine("Enter your Name: ");
-            name = Console.ReadLine();
+            string name = Console.ReadLine();
             name = isAlpha(name);
             string password;
             Console.WriteLine("Enter your Password: ");
             password = Console.ReadLine();
             string emailaddress = ValidEmail();
             Console.WriteLine("Enter your age");
-            int age;
-            age = IntegerValidation();
+            int age = IntegerValidation();
+            isValidAgeStaff(age);
             Console.WriteLine("Enter your Phone Number");
             string phoneNumber = Console.ReadLine();
             Double Number = ValidPhoneNumber(phoneNumber);
             string address = Console.ReadLine();
             Console.WriteLine("Enter your Address");
-            Person p = new Person(name, password,address,age,Number,emailaddress,role);
-            return p;
+            Person person = new Person(ID,name, password,address,age, Number, emailaddress,role);
+            return person;
+
         }
+        public static Candidate TakeInputForIDandName()
+        {
+            Console.Write("Enter the ID of the candidate");
+            string name = Console.ReadLine();
+            Console.Write("Enter the ID of the candidate");
+            string ID = Console.ReadLine();
+            Candidate candidate = new Candidate(ID, name, null);
+            return candidate;
+        }
+
+        public static int PersonScreen()
+        {
+            int option = 4;
+            do
+            {
+                PersonUI.PrintHeader();
+                PersonUI.subMenuBeforeMainMenu("Identity");
+                Console.WriteLine("1.Are you a Candidate");
+                Console.WriteLine("2.Are you a Staff");
+                Console.WriteLine("3.Are you a Admin");
+                Console.WriteLine("0.Exit");
+                option = IntegerValidation();
+            }while(option > 3);
+            return option;
+        }
+
+        public static int LogMenuScreen()
+        {
+            Console.Clear();
+            PersonUI.PrintHeader();
+            PersonUI.subMenuBeforeMainMenu("LogScreen");
+            int option = 4;
+            do
+            {
+                Console.WriteLine(" 1. Sign in");
+                Console.WriteLine(" 2. Sign up");
+                Console.WriteLine(" 3. Back");
+                Console.WriteLine(" 0. Exit");
+                Console.Write("Enter your option");
+                option = PersonUI.IntegerValidation();
+                Console.Clear();
+            } while (option>3);
+            return option;
+        }
+
         public static void PrintHeader()
         {
             Console.Clear();
@@ -81,43 +133,6 @@ namespace Military_Selection_Management_System.UI
             Console.WriteLine("------------------------");
             Console.ReadKey();
         }
-        public static string Signup(string name, string phoneNumber, string password, int age, string role, string address)
-        {
-            string lowerCaseRole = role.ToLower();
-            if (lowerCaseRole != "candidate" && lowerCaseRole != "staff" && lowerCaseRole != "admin")
-            {
-                return "Invalid role";
-            }
-
-            if (lowerCaseRole == "admin" && NameAdmin == name && passwordAdmin == password)
-            {
-                return "Sign in";
-            }
-
-            if (lowerCaseRole == "staff" && UserExist(name, password, role))
-            {
-                return "Sign in";
-            }
-
-            if (lowerCaseRole == "candidate" && UserExist(name, password, role))
-            {
-                return "Sign in";
-            }
-
-            if (!isValidPhoneNumber(phoneNumber))
-            {
-                return "Invalid phone number";
-            }
-
-            if (!isValidAge(age))
-            {
-                return "Invalid age";
-            }
-
-            StoreDataBasedOnRole(name, phoneNumber, password, age, role, address, lowerCaseRole);
-
-            return "Success";
-        }
 
         public static void ViewTopCandidates()
         {
@@ -133,19 +148,9 @@ namespace Military_Selection_Management_System.UI
             Console.ReadLine();
         }
 
-        public static void ShowReport()
-        {
-            Console.WriteLine("Total Registered Candidates: {0}", CandidateDL.candidatesList.Count);
-            Console.WriteLine("Name \t\t Age \t Performance");
-
-            foreach (Candidate candidate in CandidateDL.candidatesList)
-            {
-                Console.WriteLine("{0,-15} {1,-5} {2,-12}", candidate.getName(), candidate.getAge(), candidate.getSelectionStatus());
-            }
-        }
 
 
-        public static bool isValidAge(int age)
+        public static bool isValidAgeCandidate(int age)
         {
             if (age < 30 && age > 15 && age >= 1)
             {
@@ -153,6 +158,34 @@ namespace Military_Selection_Management_System.UI
             }
             return false;
         }
+        public static bool isValidAgeStaff(int age)
+        {
+            if (age < 60 && age > 15 && age >= 1)
+            {
+                return true;
+            }
+            return false;
+        }
+        public static int CheckAgeCandidate(int age)
+        {
+            do
+            {
+                Console.WriteLine("Wrong! \n Enter Again");
+                age = IntegerValidation();
+            } while (!isValidAgeCandidate(age));
+            return age;
+        }
+        public static int CheckAgeStaff(int age)
+        {
+
+            do
+            {
+                Console.WriteLine("Wrong! \n Enter Again");
+                age = IntegerValidation();
+            } while (!isValidAgeStaff(age));
+            return age;
+        }
+
         public static bool isValidPhoneNumber(string phoneNumber)
         {
             // Check if phone number has the correct length
@@ -200,6 +233,32 @@ namespace Military_Selection_Management_System.UI
             }
             return number;
         }
+        public static float FloatValidation()
+        {
+            float value;
+            while (true)
+            {
+                if (float.TryParse(Console.ReadLine(), out value))
+                {
+                    return value;
+                }
+                Console.WriteLine("Invalid input. Please enter a valid float value.");
+            }
+        }
+
+        public static double DoubleValidation()
+        {
+            double value;
+            while (true)
+            {
+                if (double.TryParse(Console.ReadLine(), out value))
+                {
+                    return value;
+                }
+                Console.WriteLine("Invalid input. Please enter a valid double value.");
+            }
+        }
+
         public static string isAlpha(string input)
         {
             int size = input.Length;

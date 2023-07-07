@@ -6,8 +6,16 @@ using System.Threading.Tasks;
 
 namespace Pacman_Game.GL
 {
-     class GhostHorizontal
+     class GhostHorizontal : Ghost
     {
-        
+        public GhostHorizontal(char displayCharacter, Cell startCell) : base(displayCharacter, startCell)
+        {
+            this.currentCell = startCell;
+        }
+        public Cell Move()
+        {
+            return new Cell();
+        }
+
     }
 }

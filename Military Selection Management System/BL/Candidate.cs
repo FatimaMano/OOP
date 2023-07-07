@@ -1,8 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.SqlServer.Server;
+using Military_Selection_Management_System.DL;
+using Military_Selection_Management_System.Extras;
 using Military_Selection_Management_System.UI;
 namespace Military_Selection_Management_System.BL
 {
@@ -10,11 +14,11 @@ namespace Military_Selection_Management_System.BL
     {
         //Attributes
         private string Allergies;
-        private string Treatments;
         private string complain;
         private float MatricMarks;
         private float InterMarksPart;
         private float CGPA;
+        private string Educational_Status;
         private int IntelligenceTest;
         private int AcademicTest;
         private int Height;
@@ -22,20 +26,28 @@ namespace Military_Selection_Management_System.BL
         private string SelectionStatus;
         private int count;
         private double Result;
+        
         // Constructors
         public Candidate()
         {
 
         }
-        public Candidate(string name, string password) : base(name, password)
+        public Candidate(string ID,string name, string password) : base(ID,name, password)
         {
 
         }
-        public Candidate(string name, string password, string address, int age, double phoneNumber, string emailAddress, string role) : base(name, password, address, age, phoneNumber, emailAddress, role)
+        public Candidate(string ID,string name, string password, string address, int age, double phoneNumber, string emailAddress, string role) : base(ID,name, password, address, age, phoneNumber, emailAddress, role)
         {
 
 
         }
+        public Candidate(string ID, string password) : base(ID, password)
+        {
+
+        }
+
+        //AddintoList
+
 
         // Getter Setters
         public int getAcademicTest()
@@ -51,13 +63,10 @@ namespace Military_Selection_Management_System.BL
         {
             return Allergies;
         }
-        public string getTreatments()
-        {
-            return Treatments;
-        }
+
         public string getcomplain()
         {
-            return Treatments;
+            return complain;
         }
         public float getMatricMarks()
         {
@@ -133,6 +142,10 @@ namespace Military_Selection_Management_System.BL
         public void setIntelligenceTest(int IntelligenceTest)
         {
             this.IntelligenceTest = IntelligenceTest;
+        }
+        public void SetEducationalStatus(string Status)
+        {
+            this.Educational_Status = Status;
         }
 
     }
