@@ -33,7 +33,7 @@ namespace Military_Selection_Management_System.UI
             string name = Console.ReadLine();
             name = isAlpha(name);
             string password;
-            Console.WriteLine("Enter your Password: ");
+            Console.WriteLine("Create Password: ");
             password = Console.ReadLine();
             string emailaddress = ValidEmail();
             Console.WriteLine("Enter your age");
@@ -42,8 +42,8 @@ namespace Military_Selection_Management_System.UI
             Console.WriteLine("Enter your Phone Number");
             string phoneNumber = Console.ReadLine();
             Double Number = ValidPhoneNumber(phoneNumber);
-            string address = Console.ReadLine();
             Console.WriteLine("Enter your Address");
+            string address = Console.ReadLine();
             Person person = new Person(ID,name, password,address,age, Number, emailaddress,role);
             return person;
 

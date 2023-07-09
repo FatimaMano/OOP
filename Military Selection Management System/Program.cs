@@ -39,6 +39,7 @@ namespace Military_Selection_Management_System
                         Console.Clear();
                         PersonUI.PrintHeader();
                         Person person = PersonUI.TakeInputSignIn();
+
                         Candidate candidate = new Candidate(person.getID(), person.getPassword());
 
 
@@ -49,8 +50,6 @@ namespace Military_Selection_Management_System
                         Console.Clear();
                         PersonUI.PrintHeader();
                         Person person = PersonUI.TakeInputForSignUp("Candidate");
-
-                        string ID = CandidateUI.TakeInputForID();
 
 
                     }
@@ -68,6 +67,12 @@ namespace Military_Selection_Management_System
                         Console.Clear();
                         PersonUI.PrintHeader();
                         Person person = PersonUI.TakeInputSignIn();
+                        if(Person.SignIn(person))
+                        {
+                            Candidate candidate2 = CandidateDL.CreateCandidateObject(person, Extras.Options.SignIn);
+                            CandidateUI.CandidateScreen(candidate2);
+
+                        }
 
                     }
                     else if (choice == 2)

@@ -63,9 +63,59 @@ namespace Military_Selection_Management_System_GUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dominik_sostmann_8wgYWX2tXgk_unsplash {
+            get {
+                object obj = ResourceManager.GetObject("dominik-sostmann-8wgYWX2tXgk-unsplash", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dominik_sostmann_8wgYWX2tXgk_unsplash__1_ {
+            get {
+                object obj = ResourceManager.GetObject("dominik-sostmann-8wgYWX2tXgk-unsplash (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap HomeIcon {
+            get {
+                object obj = ResourceManager.GetObject("HomeIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap jeremy_bishop_G9i_plbfDgk_unsplash {
             get {
                 object obj = ResourceManager.GetObject("jeremy-bishop-G9i_plbfDgk-unsplash", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap jeremy_bishop_G9i_plbfDgk_unsplash1 {
+            get {
+                object obj = ResourceManager.GetObject("jeremy-bishop-G9i_plbfDgk-unsplash1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Military_Candidate_Image {
+            get {
+                object obj = ResourceManager.GetObject("Military Candidate Image", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

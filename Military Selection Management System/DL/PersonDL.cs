@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 using Military_Selection_Management_System.BL;
+using Military_Selection_Management_System.UI;
 
 namespace Military_Selection_Management_System.DL
 {
@@ -26,6 +27,7 @@ namespace Military_Selection_Management_System.DL
             using (StreamWriter file = new StreamWriter(filePath, true))
             {
                 StoreNextRecord("EmployeesData");
+                file.Write(person.getID() + ",");
                 file.Write(person.getName() + ",");
                 file.Write(person.getAge() + ",");
                 file.Write(person.getPassword() + ",");
@@ -75,23 +77,61 @@ namespace Military_Selection_Management_System.DL
 
         public static void LoadFromEmployeesFile(string filePath)
         {
-            string[] attributes = File.ReadAllText(filePath).Split(',');
-            while (attributes.Length > 0)
+            StreamReader f = new StreamReader(filePath);
+            string record;
+            int currentIndex = 0;
+            while ((record = f.ReadLine()) != null)
             {
+                string[] attributes = record.Split(',');
                 Staff staff = new Staff();
-                int currentIndex = 0;
+                staff.setID(attributes[currentIndex++]);
                 staff.setName(attributes[currentIndex++]);
-                staff.setAge(Convert.ToInt32(attributes[currentIndex++]));
+                staff.setAge(ParseInt32(attributes[currentIndex++]));
                 staff.setPassword(attributes[currentIndex++]);
-                staff.setphoneNumber(Convert.ToDouble(attributes[currentIndex++]));
+                staff.setphoneNumber(ParseDouble(attributes[currentIndex++]));
                 staff.setRole(attributes[currentIndex++]);
                 staff.setemailAddress(attributes[currentIndex++]);
                 staff.setaddress(attributes[currentIndex++]);
-
                 AddPerson(staff);
+                currentIndex = 0;
+            }
 
             }
+
+        public static int ParseInt32(string value)
+        {
+            if (string.IsNullOrEmpty(value))
+            {
+                return 0;
+            }
+
+            int result = 0;
+            int.TryParse(value, out result);
+            return result;
         }
 
+        public static double ParseDouble(string value)
+        {
+            if (string.IsNullOrEmpty(value))
+            {
+                return 0;
+            }
+
+            double result = 0;
+            double.TryParse(value, out result);
+            return result;
+        }
+
+        public static float ParseSingle(string value)
+        {
+            if (string.IsNullOrEmpty(value))
+            {
+                return 0;
+            }
+
+            float result = 0;
+            float.TryParse(value, out result);
+            return result;
+        }
     }
-}
+    }

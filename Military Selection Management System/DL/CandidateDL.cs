@@ -53,6 +53,7 @@ namespace Military_Selection_Management_System.DL
             using (StreamWriter file = new StreamWriter(filePath, true))
             {
                 PersonDL.StoreNextRecord("CandidateData");
+                file.Write(candidate.getID() + ",");
                 file.Write(candidate.getName() + ",");
                 file.Write(candidate.getAge() + ",");
                 file.Write(candidate.getPassword() + ",");
@@ -75,34 +76,37 @@ namespace Military_Selection_Management_System.DL
         }
         public static void LoadFromCandidateFile(string filePath)
         {
-            string[] attributes = File.ReadAllText(filePath).Split(',');
-            while(attributes.Length > 0)
+            StreamReader f = new StreamReader(filePath);
+            string record;
+            int currentIndex = 0;
+            while ((record = f.ReadLine()) != null)
             {
+                string[] attributes = record.Split(',');
                 Candidate candidate = new Candidate();
-                int currentIndex = 0;
-                candidate.setName(attributes[currentIndex++]);
-                candidate.setAge(Convert.ToInt32(attributes[currentIndex++]));
+                candidate.setID(attributes[currentIndex++]);
+                candidate.setName(attributes[currentIndex++]); 
+                candidate.setAge(PersonDL.ParseInt32(attributes[currentIndex++]));
                 candidate.setPassword(attributes[currentIndex++]);
-                candidate.setphoneNumber(Convert.ToDouble(attributes[currentIndex++]));
+                candidate.setphoneNumber(PersonDL.ParseDouble(attributes[currentIndex++]));
                 candidate.setRole(attributes[currentIndex++]);
                 candidate.setemailAddress(attributes[currentIndex++]);
                 candidate.setaddress(attributes[currentIndex++]);
-                candidate.setHeight(Convert.ToInt32(attributes[currentIndex++]));
-                candidate.setWeight(Convert.ToInt32(attributes[currentIndex++]));
-                candidate.setMatricMarks(Convert.ToSingle(attributes[currentIndex++]));
-                candidate.setInterMarksPart(Convert.ToSingle(attributes[currentIndex++]));
-                candidate.setIntelligenceTest(Convert.ToInt32(attributes[currentIndex++]));
-                candidate.setAcademicTest(Convert.ToInt32(attributes[currentIndex++]));
-                candidate.setCGPA(Convert.ToSingle(attributes[currentIndex++]));
-                candidate.setResult(Convert.ToDouble(attributes[currentIndex++]));
-                candidate.setSelectionStatus((attributes[currentIndex++]));
+                candidate.setHeight(PersonDL.ParseInt32(attributes[currentIndex++]));
+                candidate.setWeight(PersonDL.ParseInt32(attributes[currentIndex++]));
+                candidate.setMatricMarks(PersonDL.ParseSingle(attributes[currentIndex++]));
+                candidate.setInterMarksPart(PersonDL.ParseSingle(attributes[currentIndex++]));
+                candidate.setIntelligenceTest(PersonDL.ParseInt32(attributes[currentIndex++]));
+                candidate.setAcademicTest(PersonDL.ParseInt32(attributes[currentIndex++]));
+                candidate.setCGPA(PersonDL.ParseSingle(attributes[currentIndex++]));
+                candidate.setResult(PersonDL.ParseDouble(attributes[currentIndex++]));
+                candidate.setSelectionStatus(attributes[currentIndex++]);
                 candidate.setComplain(attributes[currentIndex++]);
-                candidate.setAllergies(attributes[currentIndex]);
-
+                candidate.setAllergies(attributes[currentIndex++]);
                 AddCandidate(candidate);
-
+                currentIndex = 0;
             }
         }
+
         public static Candidate CreateCandidateObject(Person person, Extras.Options decide)
         {
             if (decide == Extras.Options.SignUp)

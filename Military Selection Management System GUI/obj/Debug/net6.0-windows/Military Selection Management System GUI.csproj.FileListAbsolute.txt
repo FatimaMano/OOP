@@ -17,3 +17,7 @@ C:\Users\HP\source\repos\Military Selection Management System GUI\obj\Debug\net6
 C:\Users\HP\source\repos\Military Selection Management System GUI\obj\Debug\net6.0-windows\Military_Selection_Management_System_GUI.Properties.Resources.resources
 C:\Users\HP\source\repos\Military Selection Management System GUI\obj\Debug\net6.0-windows\Military_Selection_Management_System_GUI.MilitarySelection.resources
 C:\Users\HP\source\repos\Military Selection Management System GUI\obj\Debug\net6.0-windows\Military_Selection_Management_System_GUI.LogIn.resources
+C:\Users\HP\source\repos\Military Selection Management System GUI\obj\Debug\net6.0-windows\Military_Selection_Management_System_GUI.Admin_Screen.resources
+C:\Users\HP\source\repos\Military Selection Management System GUI\obj\Debug\net6.0-windows\Military_Selection_Management_System_GUI.CandidateScreen.resources
+C:\Users\HP\source\repos\Military Selection Management System GUI\obj\Debug\net6.0-windows\Military_Selection_Management_System_GUI.SignUp.resources
+C:\Users\HP\source\repos\Military Selection Management System GUI\obj\Debug\net6.0-windows\Military_Selection_Management_System_GUI.StaffScreen.resources

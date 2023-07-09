@@ -98,7 +98,7 @@
             Controls.Add(label2);
             Controls.Add(textBox1);
             Name = "LogIn";
-            Text = "LogIn";
+            Text = "    ";
             ResumeLayout(false);
             PerformLayout();
         }
