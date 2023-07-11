@@ -8,3 +8,4 @@ C:\Users\HP\source\repos\Pacman Game GUI\obj\Debug\Pacman Game GUI.csproj.Genera
 C:\Users\HP\source\repos\Pacman Game GUI\obj\Debug\Pacman Game GUI.csproj.CoreCompileInputs.cache
 C:\Users\HP\source\repos\Pacman Game GUI\obj\Debug\Pacman Game GUI.exe
 C:\Users\HP\source\repos\Pacman Game GUI\obj\Debug\Pacman Game GUI.pdb
+C:\Users\HP\source\repos\Pacman Game GUI\obj\Debug\Pacman Game GUI.csproj.SuggestedBindingRedirects.cache

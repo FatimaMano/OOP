@@ -67,10 +67,29 @@ namespace Military_Selection_Management_System
                         Console.Clear();
                         PersonUI.PrintHeader();
                         Person person = PersonUI.TakeInputSignIn();
+                        while(!Person.SignIn(person))
+                        {
+                            Console.WriteLine("User Not Found");
+                            Console.ReadKey();
+                            Console.Clear();
+                            PersonUI.PrintHeader();
+                            PersonUI.subMenu("SignUp/SignIn Screen");
+                            int choice2 = PersonUI.LogMenuScreen();
+
+                        }
                         if(Person.SignIn(person))
                         {
                             Candidate candidate2 = CandidateDL.CreateCandidateObject(person, Extras.Options.SignIn);
                             CandidateUI.CandidateScreen(candidate2);
+                        }
+                        else
+                        {
+                            Console.WriteLine("User Not Found");
+                            Console.ReadKey();
+                            Console.Clear();
+                            PersonUI.PrintHeader();
+                            PersonUI.subMenu("SignUp/SignIn Screen");
+                            int choice2 = PersonUI.LogMenuScreen();
 
                         }
 

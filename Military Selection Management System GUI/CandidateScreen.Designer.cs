@@ -28,16 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CandidateScreen));
             panel1 = new Panel();
             panel2 = new Panel();
             pictureBox1 = new PictureBox();
             Username = new Label();
             BtnDashboard = new Button();
-            btnLeaderBoard = new Button();
-            btnResult = new Button();
-            btnMore = new Button();
-            button4 = new Button();
+            btnleaderboard = new Button();
+            button2 = new Button();
+            button3 = new Button();
+            btnSignOut = new Button();
             btnSettings = new Button();
+            button6 = new Button();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -46,11 +48,12 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(24, 30, 54);
-            panel1.Controls.Add(button4);
+            panel1.Controls.Add(button6);
             panel1.Controls.Add(btnSettings);
-            panel1.Controls.Add(btnMore);
-            panel1.Controls.Add(btnResult);
-            panel1.Controls.Add(btnLeaderBoard);
+            panel1.Controls.Add(btnSignOut);
+            panel1.Controls.Add(button3);
+            panel1.Controls.Add(button2);
+            panel1.Controls.Add(btnleaderboard);
             panel1.Controls.Add(BtnDashboard);
             panel1.Controls.Add(panel2);
             panel1.Dock = DockStyle.Left;
@@ -96,101 +99,123 @@
             BtnDashboard.FlatAppearance.BorderSize = 0;
             BtnDashboard.FlatStyle = FlatStyle.Flat;
             BtnDashboard.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            BtnDashboard.ForeColor = Color.Green;
+            BtnDashboard.ForeColor = SystemColors.InactiveCaption;
+            BtnDashboard.Image = (Image)resources.GetObject("BtnDashboard.Image");
             BtnDashboard.Location = new Point(0, 144);
             BtnDashboard.Name = "BtnDashboard";
-            BtnDashboard.Size = new Size(220, 36);
+            BtnDashboard.Size = new Size(220, 47);
             BtnDashboard.TabIndex = 2;
             BtnDashboard.Text = "Dashboard";
-            BtnDashboard.TextAlign = ContentAlignment.MiddleLeft;
             BtnDashboard.TextImageRelation = TextImageRelation.TextBeforeImage;
             BtnDashboard.UseVisualStyleBackColor = false;
+            BtnDashboard.Click += BtnDashboard_Click;
             // 
-            // btnLeaderBoard
+            // btnleaderboard
             // 
-            btnLeaderBoard.BackColor = Color.Transparent;
-            btnLeaderBoard.Dock = DockStyle.Top;
-            btnLeaderBoard.FlatAppearance.BorderSize = 0;
-            btnLeaderBoard.FlatStyle = FlatStyle.Flat;
-            btnLeaderBoard.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnLeaderBoard.ForeColor = Color.Green;
-            btnLeaderBoard.Location = new Point(0, 180);
-            btnLeaderBoard.Name = "btnLeaderBoard";
-            btnLeaderBoard.Size = new Size(220, 36);
-            btnLeaderBoard.TabIndex = 2;
-            btnLeaderBoard.Text = "LeaderBoard";
-            btnLeaderBoard.TextAlign = ContentAlignment.MiddleLeft;
-            btnLeaderBoard.TextImageRelation = TextImageRelation.TextBeforeImage;
-            btnLeaderBoard.UseVisualStyleBackColor = false;
+            btnleaderboard.BackColor = Color.Transparent;
+            btnleaderboard.Dock = DockStyle.Top;
+            btnleaderboard.FlatAppearance.BorderSize = 0;
+            btnleaderboard.FlatStyle = FlatStyle.Flat;
+            btnleaderboard.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnleaderboard.ForeColor = SystemColors.InactiveCaption;
+            btnleaderboard.Image = (Image)resources.GetObject("btnleaderboard.Image");
+            btnleaderboard.Location = new Point(0, 191);
+            btnleaderboard.Name = "btnleaderboard";
+            btnleaderboard.Size = new Size(220, 47);
+            btnleaderboard.TabIndex = 2;
+            btnleaderboard.Text = "Leaderboard";
+            btnleaderboard.TextImageRelation = TextImageRelation.TextBeforeImage;
+            btnleaderboard.UseVisualStyleBackColor = false;
+            btnleaderboard.Click += BtnDashboard_Click;
             // 
-            // btnResult
+            // button2
             // 
-            btnResult.BackColor = Color.Transparent;
-            btnResult.Dock = DockStyle.Top;
-            btnResult.FlatAppearance.BorderSize = 0;
-            btnResult.FlatStyle = FlatStyle.Flat;
-            btnResult.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnResult.ForeColor = Color.Green;
-            btnResult.Location = new Point(0, 216);
-            btnResult.Name = "btnResult";
-            btnResult.Size = new Size(220, 36);
-            btnResult.TabIndex = 2;
-            btnResult.Text = "Result";
-            btnResult.TextAlign = ContentAlignment.MiddleLeft;
-            btnResult.TextImageRelation = TextImageRelation.TextBeforeImage;
-            btnResult.UseVisualStyleBackColor = false;
+            button2.BackColor = Color.Transparent;
+            button2.Dock = DockStyle.Top;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            button2.ForeColor = SystemColors.InactiveCaption;
+            button2.Image = (Image)resources.GetObject("button2.Image");
+            button2.Location = new Point(0, 238);
+            button2.Name = "button2";
+            button2.Size = new Size(220, 47);
+            button2.TabIndex = 2;
+            button2.Text = "Dashboard";
+            button2.TextImageRelation = TextImageRelation.TextBeforeImage;
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += BtnDashboard_Click;
             // 
-            // btnMore
+            // button3
             // 
-            btnMore.BackColor = Color.Transparent;
-            btnMore.Dock = DockStyle.Top;
-            btnMore.FlatAppearance.BorderSize = 0;
-            btnMore.FlatStyle = FlatStyle.Flat;
-            btnMore.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnMore.ForeColor = Color.Green;
-            btnMore.Location = new Point(0, 252);
-            btnMore.Name = "btnMore";
-            btnMore.Size = new Size(220, 36);
-            btnMore.TabIndex = 2;
-            btnMore.Text = "More";
-            btnMore.TextAlign = ContentAlignment.MiddleLeft;
-            btnMore.TextImageRelation = TextImageRelation.TextBeforeImage;
-            btnMore.UseVisualStyleBackColor = false;
-            btnMore.Click += button3_Click;
+            button3.BackColor = Color.Transparent;
+            button3.Dock = DockStyle.Top;
+            button3.FlatAppearance.BorderSize = 0;
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            button3.ForeColor = SystemColors.InactiveCaption;
+            button3.Image = (Image)resources.GetObject("button3.Image");
+            button3.Location = new Point(0, 285);
+            button3.Name = "button3";
+            button3.Size = new Size(220, 69);
+            button3.TabIndex = 2;
+            button3.Text = "Dashboard";
+            button3.TextImageRelation = TextImageRelation.TextBeforeImage;
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += BtnDashboard_Click;
             // 
-            // button4
+            // btnSignOut
             // 
-            button4.BackColor = Color.Transparent;
-            button4.Dock = DockStyle.Bottom;
-            button4.FlatAppearance.BorderSize = 0;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button4.ForeColor = Color.Green;
-            button4.Location = new Point(0, 653);
-            button4.Name = "button4";
-            button4.Size = new Size(220, 36);
-            button4.TabIndex = 2;
-            button4.Text = "SignOut";
-            button4.TextAlign = ContentAlignment.MiddleLeft;
-            button4.TextImageRelation = TextImageRelation.TextBeforeImage;
-            button4.UseVisualStyleBackColor = false;
+            btnSignOut.BackColor = Color.Transparent;
+            btnSignOut.Dock = DockStyle.Bottom;
+            btnSignOut.FlatAppearance.BorderSize = 0;
+            btnSignOut.FlatStyle = FlatStyle.Flat;
+            btnSignOut.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSignOut.ForeColor = Color.WhiteSmoke;
+            btnSignOut.Image = (Image)resources.GetObject("btnSignOut.Image");
+            btnSignOut.Location = new Point(0, 642);
+            btnSignOut.Name = "btnSignOut";
+            btnSignOut.Size = new Size(220, 47);
+            btnSignOut.TabIndex = 2;
+            btnSignOut.Text = "SignOut";
+            btnSignOut.TextImageRelation = TextImageRelation.TextBeforeImage;
+            btnSignOut.UseVisualStyleBackColor = false;
+            btnSignOut.Click += BtnDashboard_Click;
             // 
             // btnSettings
             // 
             btnSettings.BackColor = Color.Transparent;
+            btnSettings.Dock = DockStyle.Bottom;
             btnSettings.FlatAppearance.BorderSize = 0;
             btnSettings.FlatStyle = FlatStyle.Flat;
             btnSettings.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btnSettings.ForeColor = Color.Green;
-            btnSettings.Location = new Point(21, 592);
+            btnSettings.ForeColor = SystemColors.InactiveCaption;
+            btnSettings.Image = (Image)resources.GetObject("btnSettings.Image");
+            btnSettings.Location = new Point(0, 595);
             btnSettings.Name = "btnSettings";
-            btnSettings.Size = new Size(180, 36);
+            btnSettings.Size = new Size(220, 47);
             btnSettings.TabIndex = 2;
             btnSettings.Text = "Settings";
-            btnSettings.TextAlign = ContentAlignment.MiddleLeft;
             btnSettings.TextImageRelation = TextImageRelation.TextBeforeImage;
             btnSettings.UseVisualStyleBackColor = false;
-            btnSettings.Click += button3_Click;
+            btnSettings.Click += BtnDashboard_Click;
+            // 
+            // button6
+            // 
+            button6.BackColor = Color.Transparent;
+            button6.FlatAppearance.BorderSize = 0;
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            button6.ForeColor = Color.Green;
+            button6.Image = (Image)resources.GetObject("button6.Image");
+            button6.Location = new Point(21, 750);
+            button6.Name = "button6";
+            button6.Size = new Size(180, 47);
+            button6.TabIndex = 2;
+            button6.Text = "Dashboard";
+            button6.TextImageRelation = TextImageRelation.TextBeforeImage;
+            button6.UseVisualStyleBackColor = false;
+            button6.Click += BtnDashboard_Click;
             // 
             // CandidateScreen
             // 
@@ -204,6 +229,7 @@
             Name = "CandidateScreen";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "CandidateScreen";
+            Load += CandidateScreen_Load;
             panel1.ResumeLayout(false);
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
@@ -218,10 +244,11 @@
         private PictureBox pictureBox1;
         private Label Username;
         private Button BtnDashboard;
-        private Button button4;
-        private Button btnMore;
-        private Button btnResult;
-        private Button btnLeaderBoard;
+        private Button button6;
         private Button btnSettings;
+        private Button btnSignOut;
+        private Button button3;
+        private Button button2;
+        private Button btnleaderboard;
     }
 }

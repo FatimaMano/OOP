@@ -283,7 +283,6 @@
             Controls.Add(IDText);
             Controls.Add(ID);
             Controls.Add(SignUpHeading);
-            Name = "SignUp";
             Text = "SignUp";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)SideHeaderWelcome).EndInit();
