@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.33529.622
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pacman Game GUI", "Pacman Game GUI.csproj", "{0F208EE1-535D-4FE4-8A5A-9C0CE89D968C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pacman Game GUI", "Pacman Game GUI.csproj", "{23F2D118-30C8-4096-805C-829A6863FBF4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0F208EE1-535D-4FE4-8A5A-9C0CE89D968C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0F208EE1-535D-4FE4-8A5A-9C0CE89D968C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0F208EE1-535D-4FE4-8A5A-9C0CE89D968C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0F208EE1-535D-4FE4-8A5A-9C0CE89D968C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23F2D118-30C8-4096-805C-829A6863FBF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23F2D118-30C8-4096-805C-829A6863FBF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23F2D118-30C8-4096-805C-829A6863FBF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23F2D118-30C8-4096-805C-829A6863FBF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {40061B75-FEB2-4F57-BD00-082DCD50B43C}
+		SolutionGuid = {A607FF80-65AA-46A7-ADC0-CBC13D552D18}
 	EndGlobalSection
 EndGlobal

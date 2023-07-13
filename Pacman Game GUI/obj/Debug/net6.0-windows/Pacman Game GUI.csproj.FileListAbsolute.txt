@@ -1,0 +1,7 @@
+C:\Users\HP\source\repos\Pacman Game GUI\obj\Debug\net6.0-windows\Pacman Game GUI.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\Pacman Game GUI\obj\Debug\net6.0-windows\Pacman_Game_GUI.Form1.resources
+C:\Users\HP\source\repos\Pacman Game GUI\obj\Debug\net6.0-windows\Pacman Game GUI.csproj.GenerateResource.cache
+C:\Users\HP\source\repos\Pacman Game GUI\obj\Debug\net6.0-windows\Pacman Game GUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\source\repos\Pacman Game GUI\obj\Debug\net6.0-windows\Pacman Game GUI.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\Pacman Game GUI\obj\Debug\net6.0-windows\Pacman Game GUI.AssemblyInfo.cs
+C:\Users\HP\source\repos\Pacman Game GUI\obj\Debug\net6.0-windows\Pacman Game GUI.csproj.CoreCompileInputs.cache
