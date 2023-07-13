@@ -1,0 +1,41 @@
+C:\Teaching\PacMan\PacManGUI\PacManGUI\bin\Debug\PacManGUI.exe.config
+C:\Teaching\PacMan\PacManGUI\PacManGUI\bin\Debug\PacManGUI.exe
+C:\Teaching\PacMan\PacManGUI\PacManGUI\bin\Debug\PacManGUI.pdb
+C:\Teaching\PacMan\PacManGUI\PacManGUI\obj\Debug\PacManGUI.Form1.resources
+C:\Teaching\PacMan\PacManGUI\PacManGUI\obj\Debug\PacManGUI.Properties.Resources.resources
+C:\Teaching\PacMan\PacManGUI\PacManGUI\obj\Debug\PacManGUI.csproj.GenerateResource.cache
+C:\Teaching\PacMan\PacManGUI\PacManGUI\obj\Debug\PacManGUI.csproj.CoreCompileInputs.cache
+C:\Teaching\PacMan\PacManGUI\PacManGUI\obj\Debug\PacManGUI.exe
+C:\Teaching\PacMan\PacManGUI\PacManGUI\obj\Debug\PacManGUI.pdb
+C:\Teaching\PacMan\PacManGUI\PacManGUI\obj\Debug\PacManGUI.csproj.AssemblyReference.cache
+C:\Teaching\PacMan\PacManGUI\PacManGUI\bin\Debug\EZInput.dll
+C:\Teaching\PacMan\PacManGUI\PacManGUI\bin\Debug\EZInput.xml
+C:\Teaching\PacMan\PacManGUI\PacManGUI\obj\Debug\PacManGUI.csproj.CopyComplete
+C:\Users\mlaee\OneDrive\Desktop\PacManGUI\PacManGUI\PacManGUI\bin\Debug\PacManGUI.exe.config
+C:\Users\mlaee\OneDrive\Desktop\PacManGUI\PacManGUI\PacManGUI\bin\Debug\PacManGUI.exe
+C:\Users\mlaee\OneDrive\Desktop\PacManGUI\PacManGUI\PacManGUI\bin\Debug\PacManGUI.pdb
+C:\Users\mlaee\OneDrive\Desktop\PacManGUI\PacManGUI\PacManGUI\bin\Debug\EZInput.dll
+C:\Users\mlaee\OneDrive\Desktop\PacManGUI\PacManGUI\PacManGUI\bin\Debug\EZInput.xml
+C:\Users\mlaee\OneDrive\Desktop\PacManGUI\PacManGUI\PacManGUI\obj\Debug\PacManGUI.csproj.AssemblyReference.cache
+C:\Users\mlaee\OneDrive\Desktop\PacManGUI\PacManGUI\PacManGUI\obj\Debug\PacManGUI.csproj.SuggestedBindingRedirects.cache
+C:\Users\mlaee\OneDrive\Desktop\PacManGUI\PacManGUI\PacManGUI\obj\Debug\PacManGUI.Form1.resources
+C:\Users\mlaee\OneDrive\Desktop\PacManGUI\PacManGUI\PacManGUI\obj\Debug\PacManGUI.Properties.Resources.resources
+C:\Users\mlaee\OneDrive\Desktop\PacManGUI\PacManGUI\PacManGUI\obj\Debug\PacManGUI.csproj.GenerateResource.cache
+C:\Users\mlaee\OneDrive\Desktop\PacManGUI\PacManGUI\PacManGUI\obj\Debug\PacManGUI.csproj.CoreCompileInputs.cache
+C:\Users\mlaee\OneDrive\Desktop\PacManGUI\PacManGUI\PacManGUI\obj\Debug\PacManGUI.csproj.CopyComplete
+C:\Users\mlaee\OneDrive\Desktop\PacManGUI\PacManGUI\PacManGUI\obj\Debug\PacManGUI.exe
+C:\Users\mlaee\OneDrive\Desktop\PacManGUI\PacManGUI\PacManGUI\obj\Debug\PacManGUI.pdb
+C:\Users\HP\Downloads\PacManGUI (2)\PacManGUI\PacManGUI\PacManGUI\bin\Debug\PacManGUI.exe.config
+C:\Users\HP\Downloads\PacManGUI (2)\PacManGUI\PacManGUI\PacManGUI\bin\Debug\PacManGUI.exe
+C:\Users\HP\Downloads\PacManGUI (2)\PacManGUI\PacManGUI\PacManGUI\bin\Debug\PacManGUI.pdb
+C:\Users\HP\Downloads\PacManGUI (2)\PacManGUI\PacManGUI\PacManGUI\bin\Debug\EZInput.dll
+C:\Users\HP\Downloads\PacManGUI (2)\PacManGUI\PacManGUI\PacManGUI\bin\Debug\EZInput.xml
+C:\Users\HP\Downloads\PacManGUI (2)\PacManGUI\PacManGUI\PacManGUI\obj\Debug\PacManGUI.csproj.AssemblyReference.cache
+C:\Users\HP\Downloads\PacManGUI (2)\PacManGUI\PacManGUI\PacManGUI\obj\Debug\PacManGUI.csproj.SuggestedBindingRedirects.cache
+C:\Users\HP\Downloads\PacManGUI (2)\PacManGUI\PacManGUI\PacManGUI\obj\Debug\PacManGUI.Form1.resources
+C:\Users\HP\Downloads\PacManGUI (2)\PacManGUI\PacManGUI\PacManGUI\obj\Debug\PacManGUI.Properties.Resources.resources
+C:\Users\HP\Downloads\PacManGUI (2)\PacManGUI\PacManGUI\PacManGUI\obj\Debug\PacManGUI.csproj.GenerateResource.cache
+C:\Users\HP\Downloads\PacManGUI (2)\PacManGUI\PacManGUI\PacManGUI\obj\Debug\PacManGUI.csproj.CoreCompileInputs.cache
+C:\Users\HP\Downloads\PacManGUI (2)\PacManGUI\PacManGUI\PacManGUI\obj\Debug\PacManGUI.csproj.CopyComplete
+C:\Users\HP\Downloads\PacManGUI (2)\PacManGUI\PacManGUI\PacManGUI\obj\Debug\PacManGUI.exe
+C:\Users\HP\Downloads\PacManGUI (2)\PacManGUI\PacManGUI\PacManGUI\obj\Debug\PacManGUI.pdb

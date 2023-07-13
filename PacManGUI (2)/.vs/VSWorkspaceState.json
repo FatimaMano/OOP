@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\PacManGUI",
+    "\\PacManGUI\\PacManGUI",
+    "\\PacManGUI\\PacManGUI\\PacManGUI",
+    "\\PacManGUI\\PacManGUI\\PacManGUI\\GameGL",
+    "\\PacManGUI\\PacManGUI\\PacManGUI\\Resources"
+  ],
+  "SelectedNode": "\\PacManGUI\\PacManGUI\\PacManGUI.sln",
+  "PreviewInSolutionExplorer": false
+}
