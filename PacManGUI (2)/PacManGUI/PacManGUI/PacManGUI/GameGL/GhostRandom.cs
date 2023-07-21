@@ -11,13 +11,55 @@ namespace PacMan.GameGL
 {
      class GhostRandom : Ghost
     {
-        public GhostRandom(Image image, GameCell startCell) : base(image, startCell)
+        GameDirection direction = GameDirection.Down;
+
+        public GhostRandom(Image ghostImage, GameCell startCell) : base(ghostImage)
         {
             this.CurrentCell = startCell;
         }
-        // Complete this Function on your own
-        public override void Move(PictureBox ghost, ref string ghostDirection)
+
+        public override void Move(GameCell gameCell)
         {
+            if (this.CurrentCell != null)
+            {
+                this.CurrentCell.setGameObject(Game.getBlankGameObject());
+
+            }
+            CurrentCell = gameCell;
+        }
+
+        public override GameCell nextCell()
+        {
+
+            GameCell nextCell = this.CurrentCell;
+
+            GameCell potentialNextCell = this.CurrentCell.nextCell(direction);
+
+            if (potentialNextCell == nextCell)
+            {
+                if (direction == GameDirection.Up)
+                {
+                    direction = GameDirection.Left;
+                }
+                else if (direction == GameDirection.Left)
+                {
+                    direction = GameDirection.Right;
+                }
+                if (direction == GameDirection.Down)
+                {
+                    direction = GameDirection.Right;
+                }
+                else if (direction == GameDirection.Right)
+                {
+                    direction = GameDirection.Up;
+                }
+            }
+            else
+            {
+                nextCell = potentialNextCell;
+            }
+            return nextCell;
+
         }
     }
 }

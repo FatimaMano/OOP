@@ -8,30 +8,49 @@ using System.Windows.Forms;
 
 namespace PacMan.GameGL
 {
-     class GhostHorizontal : Ghost
+    public class GhostHorizontal : Ghost
     {
-        public GhostHorizontal(Image image, GameCell startCell) : base(image, startCell)
+        GameDirection direction = GameDirection.Left;
+
+        public GhostHorizontal(Image ghostImage, GameCell startCell) : base(ghostImage)
         {
             this.CurrentCell = startCell;
         }
-        public override void Move(PictureBox ghost,ref string ghostDirection)
+
+        public override void Move(GameCell gameCell)
         {
-            if(ghostDirection == "Left")
+            if (this.CurrentCell != null)
             {
-                ghost.Left = ghost.Left + 10;
+                this.CurrentCell.setGameObject(Game.getBlankGameObject());
+
             }
-            if(ghostDirection == "Right")
+            CurrentCell = gameCell;
+        }
+
+        public override GameCell nextCell()
+        {
+
+            GameCell nextCell = this.CurrentCell;
+
+            GameCell potentialNextCell = this.CurrentCell.nextCell(direction);
+
+            if (potentialNextCell == nextCell)
             {
-                ghost.Left = ghost.Left - 10;
+                if (direction == GameDirection.Up)
+                {
+                    direction = GameDirection.Down;
+                }
+                else if (direction == GameDirection.Down)
+                {
+                    direction = GameDirection.Up;
+                }
             }
-            if((ghost.Left + ghost.Width) > ghost.Width)
+            else
             {
-                ghostDirection = "Left";
+                nextCell = potentialNextCell;
             }
-            if(ghost.Left <=2)
-            {
-                ghostDirection = "Right";
-            }
+            return nextCell;
+
         }
 
     }

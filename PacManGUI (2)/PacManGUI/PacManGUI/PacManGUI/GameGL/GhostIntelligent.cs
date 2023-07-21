@@ -5,14 +5,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
 using System.Windows.Forms;
+using PacMan.GameGL;
 
-namespace PacMan.GameGL
+namespace PacManGUI.GameGL
 {
-    public class GhostVertical : Ghost
+    class GhostIntelligent : Ghost
     {
-        GameDirection direction = GameDirection.Down;
+        GameDirection direction = GameDirection.Left;
 
-        public GhostVertical(Image ghostImage, GameCell startCell) : base(ghostImage)
+        public GhostIntelligent(Image ghostImage, GameCell startCell) : base(ghostImage)
         {
             this.CurrentCell = startCell;
         }

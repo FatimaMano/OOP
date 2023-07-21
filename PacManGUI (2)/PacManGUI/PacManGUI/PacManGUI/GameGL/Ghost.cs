@@ -9,13 +9,14 @@ using System.Windows.Forms;
 
 namespace PacMan.GameGL
 {
-    abstract class Ghost : GameObject
+    public abstract class Ghost : GameObject
     {
-        public Ghost(Image image, GameCell startCell) : base(GameObjectType.ENEMY, image)
+        public Ghost(Image image) : base(GameObjectType.ENEMY, image)
         {
-            this.CurrentCell = startCell;
         }
-        public abstract void Move(PictureBox ghost, ref string ghostDirection);
+
+        public abstract void Move(GameCell gameCell);
+        public abstract GameCell nextCell();
 
     }
 }

@@ -58,12 +58,14 @@
     <Compile Include="GameGL\Game.cs" />
     <Compile Include="GameGL\GameCell.cs" />
     <Compile Include="GameGL\GameDirection.cs" />
+    <Compile Include="GameGL\GameGhostImage.cs" />
     <Compile Include="GameGL\GameGrid.cs" />
     <Compile Include="GameGL\GameObject.cs" />
     <Compile Include="GameGL\GameObjectType.cs" />
     <Compile Include="GameGL\GamePacManPlayer.cs" />
     <Compile Include="GameGL\Ghost.cs" />
     <Compile Include="GameGL\GhostHorizontal.cs" />
+    <Compile Include="GameGL\GhostIntelligent.cs" />
     <Compile Include="GameGL\GhostRandom.cs" />
     <Compile Include="GameGL\GhostVertical.cs" />
     <Compile Include="Program.cs" />
