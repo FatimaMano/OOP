@@ -4,9 +4,10 @@
     "\\PacManGUI",
     "\\PacManGUI\\PacManGUI",
     "\\PacManGUI\\PacManGUI\\PacManGUI",
-    "\\PacManGUI\\PacManGUI\\PacManGUI\\GameGL",
+    "\\PacManGUI\\PacManGUI\\PacManGUI\\bin",
+    "\\PacManGUI\\PacManGUI\\PacManGUI\\bin\\Debug",
     "\\PacManGUI\\PacManGUI\\PacManGUI\\Resources"
   ],
-  "SelectedNode": "\\PacManGUI\\PacManGUI\\PacManGUI.sln",
+  "SelectedNode": "\\PacManGUI\\PacManGUI\\PacManGUI\\Form1.cs",
   "PreviewInSolutionExplorer": false
 }

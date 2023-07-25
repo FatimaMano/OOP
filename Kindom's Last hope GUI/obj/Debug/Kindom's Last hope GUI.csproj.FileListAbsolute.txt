@@ -1,0 +1,15 @@
+C:\Users\HP\source\repos\Kindom's Last hope GUI\obj\Debug\Kindom's Last hope GUI.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\Kindom's Last hope GUI\obj\Debug\Kindom's Last hope GUI.csproj.SuggestedBindingRedirects.cache
+C:\Users\HP\source\repos\Kindom's Last hope GUI\obj\Debug\Kindom_s_Last_hope_GUI.Form1.resources
+C:\Users\HP\source\repos\Kindom's Last hope GUI\obj\Debug\Kindom_s_Last_hope_GUI.Properties.Resources.resources
+C:\Users\HP\source\repos\Kindom's Last hope GUI\obj\Debug\Kindom_s_Last_hope_GUI.StartUpGameMenu.resources
+C:\Users\HP\source\repos\Kindom's Last hope GUI\obj\Debug\Kindom's Last hope GUI.csproj.GenerateResource.cache
+C:\Users\HP\source\repos\Kindom's Last hope GUI\obj\Debug\Kindom's Last hope GUI.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\Kindom's Last hope GUI\bin\Debug\Kindom's Last hope GUI.exe.config
+C:\Users\HP\source\repos\Kindom's Last hope GUI\bin\Debug\Kindom's Last hope GUI.exe
+C:\Users\HP\source\repos\Kindom's Last hope GUI\bin\Debug\Kindom's Last hope GUI.pdb
+C:\Users\HP\source\repos\Kindom's Last hope GUI\bin\Debug\EZInput.dll
+C:\Users\HP\source\repos\Kindom's Last hope GUI\bin\Debug\EZInput.xml
+C:\Users\HP\source\repos\Kindom's Last hope GUI\obj\Debug\Kindom's Last hope GUI.csproj.CopyComplete
+C:\Users\HP\source\repos\Kindom's Last hope GUI\obj\Debug\Kindom's Last hope GUI.exe
+C:\Users\HP\source\repos\Kindom's Last hope GUI\obj\Debug\Kindom's Last hope GUI.pdb
