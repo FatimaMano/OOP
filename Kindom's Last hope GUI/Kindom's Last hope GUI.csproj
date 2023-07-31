@@ -55,14 +55,16 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="GameGL\Bullet.cs" />
     <Compile Include="GameGL\Game.cs" />
     <Compile Include="GameGL\GameCell.cs" />
+    <Compile Include="GameGL\GameCollisionDetector.cs" />
     <Compile Include="GameGL\GameDirection.cs" />
     <Compile Include="GameGL\GameGhostImage.cs" />
     <Compile Include="GameGL\GameGrid.cs" />
     <Compile Include="GameGL\GameObject.cs" />
     <Compile Include="GameGL\GameObjectType.cs" />
-    <Compile Include="GameGL\GamePacManPlayer.cs" />
+    <Compile Include="GameGL\GamePlayer.cs" />
     <Compile Include="GameGL\Ghost.cs" />
     <Compile Include="GameGL\GhostHorizontal.cs" />
     <Compile Include="GameGL\GhostIntelligent.cs" />
@@ -92,6 +94,7 @@
     <EmbeddedResource Include="StartUpGameMenu.resx">
       <DependentUpon>StartUpGameMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="class .cd" />
     <None Include="packages.config" />
     <None Include="packages\EZInput.1.3.2\.signature.p7s" />
     <None Include="packages\EZInput.1.3.2\EZInput.1.3.2.nupkg" />
@@ -111,7 +114,14 @@
   <ItemGroup>
     <Content Include="packages\EZInput.1.3.2\lib\netstandard2.0\EZInput.dll" />
     <Content Include="packages\EZInput.1.3.2\lib\netstandard2.0\EZInput.xml" />
+    <None Include="Resources\Bullet.png" />
+    <None Include="Resources\Tile.png" />
     <None Include="Resources\Player.png" />
+    <None Include="Resources\EnemyMain.png" />
+    <None Include="Resources\EnemyTurtle.png" />
+    <None Include="Resources\EnemyBomb.png" />
+    <None Include="Resources\simplebox.png" />
+    <None Include="Resources\TileRight.png" />
     <None Include="Resources\TileGreen.png" />
     <None Include="Resources\TilePlain.png" />
     <None Include="Resources\EnemyMain.gif" />

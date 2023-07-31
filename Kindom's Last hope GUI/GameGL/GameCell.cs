@@ -10,8 +10,8 @@ namespace Kindom_s_Last_hope_GUI
         GameObject currentGameObject;
         GameGrid grid;
         PictureBox pictureBox;
-        const int width = 20;
-        const int height = 20;
+        const int width = 23;
+        const int height = 23;
         public GameCell(int row, int col,GameGrid grid) {
             this.row =row;
             this.col = col;

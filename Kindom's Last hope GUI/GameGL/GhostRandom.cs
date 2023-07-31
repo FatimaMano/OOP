@@ -12,8 +12,8 @@ namespace Kindom_s_Last_hope_GUI
      class GhostRandom : Ghost
     {
         GameDirection direction = GameDirection.Down;
-
-        public GhostRandom(Image ghostImage, GameCell startCell) : base(ghostImage)
+        private int enemylives;
+        public GhostRandom(Image ghostImage, GameCell startCell, int lives) : base(ghostImage)
         {
             this.CurrentCell = startCell;
         }

@@ -11,6 +11,7 @@ namespace Kindom_s_Last_hope_GUI
 {
     public abstract class Ghost : GameObject
     {
+        private int enemylives;
         public Ghost(Image image) : base(GameObjectType.ENEMY, image)
         {
         }

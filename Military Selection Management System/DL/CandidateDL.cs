@@ -16,6 +16,12 @@ namespace Military_Selection_Management_System.DL
         {
             candidatesList.Add(candidate);
         }
+        public void SortDataByOverallPercentage()
+        {
+            // Sort the data in descending order of overall percentage
+            CandidateDL.TopCandidatesList = CandidateDL.candidatesList.OrderByDescending(s => s.CalculateOverallPercentage(s)).ToList();
+
+        }
         public  static void DeleteCandidate(string ID,string name) 
         {
             foreach(Candidate candidate in candidatesList)
@@ -41,7 +47,7 @@ namespace Military_Selection_Management_System.DL
         {
             foreach (Candidate Candidate1 in CandidateDL.candidatesList)
             {
-                if (Candidate1.getName() == candidate.getName() && Candidate1.getID() == candidate.getID() && Candidate1.getPassword() == candidate.getPassword())
+                if (Candidate1.getID() == candidate.getID() && Candidate1.getPassword() == candidate.getPassword())
                 {
                     return candidate;
                 }

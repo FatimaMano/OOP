@@ -11,8 +11,8 @@ namespace Kindom_s_Last_hope_GUI
     public class GhostHorizontal : Ghost
     {
         GameDirection direction = GameDirection.Left;
-
-        public GhostHorizontal(Image ghostImage, GameCell startCell) : base(ghostImage)
+        private int enemylives;
+        public GhostHorizontal(Image ghostImage, GameCell startCell, int lives) : base(ghostImage)
         {
             this.CurrentCell = startCell;
         }

@@ -12,6 +12,7 @@ namespace Kindom_s_Last_hope_GUI
         PLAYER,
         ENEMY,
         REWARD,
+        BULLET,
         NONE
     }
 }

@@ -26,7 +26,7 @@ namespace Kindom_s_Last_hope_GUI
 
         public static GameObjectType getGameObjectType(char displayCharacter) { 
 
-            if (displayCharacter == '|' || displayCharacter == '%' || displayCharacter == '#') {
+            if (displayCharacter == '0' || displayCharacter == '$' || displayCharacter == '%' || displayCharacter == '>') {
                 return GameObjectType.WALL;
             }
 

@@ -8,6 +8,8 @@ using Microsoft.SqlServer.Server;
 using Military_Selection_Management_System.DL;
 using Military_Selection_Management_System.Extras;
 using Military_Selection_Management_System.UI;
+using static System.Net.Mime.MediaTypeNames;
+
 namespace Military_Selection_Management_System.BL
 {
     public class Candidate : Person
@@ -26,7 +28,12 @@ namespace Military_Selection_Management_System.BL
         private string SelectionStatus;
         private int count;
         private double Result;
-        
+        private const double MatricPassPercentage = 70.0;
+        private const double InterPassPercentage = 70.0;
+        private const double CgpaPassThreshold = 3.5;
+        private const double IntelligenceTestPassPercentage = 80.0;
+        private const double AcademicTestPassPercentage = 80.0;
+
         // Constructors
         public Candidate()
         {
@@ -130,9 +137,9 @@ namespace Military_Selection_Management_System.BL
         {
             this.SelectionStatus = SelectionStatus;
         }
-        public void setResult(double result)
+        public void setResult(Candidate candidate)
         {
-            Result = result;
+            Result = CalculateOverallPercentage(candidate);
         }
         public void setAcademicTest(int AcademicTest)
         {
@@ -148,5 +155,58 @@ namespace Military_Selection_Management_System.BL
             this.Educational_Status = Status;
         }
 
+        public double CalculateOverallPercentage(Candidate candidate)
+        {
+
+            // Calculate the percentage of marks obtained in each test
+            double matricPercentage = CalculatePercentage(candidate.getMatricMarks());
+            double interPercentage = CalculatePercentage(candidate.getInterMarksPart());
+            double cgpaPercentage = CalculateCgpaPercentage(candidate.getCGPA());
+            double intelligenceTestPercentage = CalculateIntelligencePercentage(candidate.getIntelligenceTest());
+            double academicTestPercentage = CalculateAcademicPercentage(candidate.getAcademicTest());
+
+            // Check if the student has passed overall
+            bool overallPassed = CheckOverallPass(matricPercentage, interPercentage, cgpaPercentage, intelligenceTestPercentage, academicTestPercentage);
+
+            // Calculate the overall percentage based on the weightage
+            double overallPercentage = CalculateWeightedAverage(matricPercentage, interPercentage, cgpaPercentage, intelligenceTestPercentage, academicTestPercentage);
+
+            // Return the overall percentage or 0 if the student has not passed overall
+            return overallPassed ? overallPercentage : 0.0;
+        }
+
+        private static float CalculatePercentage(float obtainedMarks)
+        {
+            return (obtainedMarks / 1100) * 100;
+        }
+        private static float CalculateIntelligencePercentage(int obtainedMarks)
+        {
+            return (obtainedMarks / 160) * 100;
+        }
+        private static float CalculateAcademicPercentage(int obtainedMarks)
+        {
+            return (obtainedMarks / 200) * 100;
+        }
+
+        private static double CalculateCgpaPercentage(float cgpa)
+        {
+            return (cgpa / 4.0) * 100.0;
+        }
+
+        private static bool CheckOverallPass(double matricPercentage, double interPercentage, double cgpaPercentage, double intelligenceTestPercentage, double academicTestPercentage)
+        {
+            return matricPercentage >= MatricPassPercentage &&
+                   interPercentage >= InterPassPercentage &&
+                   cgpaPercentage >= CgpaPassThreshold &&
+                   intelligenceTestPercentage >= IntelligenceTestPassPercentage &&
+                   academicTestPercentage >= AcademicTestPassPercentage;
+        }
+
+        private static double CalculateWeightedAverage(double matricPercentage, double interPercentage, double cgpaPercentage, double intelligenceTestPercentage, double academicTestPercentage)
+        {
+            return (matricPercentage + interPercentage + cgpaPercentage + intelligenceTestPercentage + academicTestPercentage) / 5.0;
+        }
+
     }
+
 }

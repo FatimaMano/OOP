@@ -120,11 +120,11 @@ namespace Military_Selection_Management_System.BL
 			return role;
 		}
         // Exist Validating
-        public static bool isPersonExistinList(string name, string password, string role)
+        public static bool isPersonExistinList(string ID, string password)
         {
             foreach (Person person in PersonDL.PersonsList)
             {
-                if (person.getName() == name && person.getPassword() == password && person.getRole() == role)
+                if (person.getID() == ID && person.getPassword() == password)
                 {
                     return true;
                 }
@@ -170,36 +170,28 @@ namespace Military_Selection_Management_System.BL
 
             return "Success";
         }
-		public static bool SignIn(Person p)
+		public static string SignIn(Person p)
 		{
-			if(p.getRole() == "Candidate")
+            Candidate candidate = CandidateDL.CreateCandidateObject(p, Extras.Options.SignIn);	
+			Candidate candidateCheck = CandidateDL.isCandidateExist(candidate);
+			if(candidateCheck == null)
 			{
-				Candidate candidate = CandidateDL.CreateCandidateObject(p, Extras.Options.SignIn);
-				Candidate candidateCheck = CandidateDL.isCandidateExist(candidate);
-				if(candidateCheck == null)
-				{
-					return false;
-				}
-				else
-				{
-					return true;
-				}
-
-            }
-			else if (p.getRole() == "Staff" || p.getRole() == "Admin")
-            {
-                bool check = isPersonExistinList(p.getName(),p.getPassword(),p.getRole());
-                if(!check)
-				{
-					return false;
-				}
-				else
-				{
-					return true;
-				}
-
-            }
-			return false;
+					return "false";
+			}
+			else
+			{
+					return "Candidate";
+			}
+            bool check = isPersonExistinList(p.getID(),p.getPassword());
+            if(!check)
+			{
+					return "false";
+			}
+			else
+			{
+					return "Person";
+			}
+			return "false";
         }
 
     }

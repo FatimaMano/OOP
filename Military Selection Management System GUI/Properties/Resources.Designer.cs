@@ -83,6 +83,16 @@ namespace Military_Selection_Management_System_GUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap HeadStaff {
+            get {
+                object obj = ResourceManager.GetObject("HeadStaff", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap HomeIcon {
             get {
                 object obj = ResourceManager.GetObject("HomeIcon", resourceCulture);

@@ -1,0 +1,6 @@
+123,Fatima,20,34dnd,03246577881,Staff,fatima23@gmail.com,34845BlockD145
+124,Ali,36,34d4,03256577881,Staff,Ali23@gmail.com,34845BlockD145
+125,Ahmad,40,34d5,03256577881,Admin,Ahmad23@gmail.com,34845BlockD145
+126,ali,43,34d6,03266577881,Staff,ali34@gmail.com,34845BlockD145
+127,waheed,39,34d7,03276577881,Staff,waheed23@gmail.com,34845BlockD145
+128,rehma,33,34d8,03236577881,Admin,rehma45@gmail.com,34845BlockD145

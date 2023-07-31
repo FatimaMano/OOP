@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Kindom_s_Last_hope_GUI.Form1" Collapsed="true">
+    <Position X="14.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACgBKAAAkAQgACIAAEygAAgABSBAAYAAAAAAAA=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Kindom_s_Last_hope_GUI.Game">
+    <Position X="0.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameGL\Game.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Kindom_s_Last_hope_GUI.GameCell">
+    <Position X="2.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAQAQAAAAwACACIAAADgAAAAAAAAYAA=</HashCode>
+      <FileName>GameGL\GameCell.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Kindom_s_Last_hope_GUI.GameGrid">
+    <Position X="4" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAEIAAABAAIACAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameGL\GameGrid.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Kindom_s_Last_hope_GUI.GameObject">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAABAAAAEgAAQBAAAEAAEAAAABA=</HashCode>
+      <FileName>GameGL\GameObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Kindom_s_Last_hope_GUI.GamePlayer">
+    <Position X="3.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameGL\GamePlayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Kindom_s_Last_hope_GUI.Ghost">
+    <Position X="8.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAABAAAgAAAAAAAA=</HashCode>
+      <FileName>GameGL\Ghost.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Kindom_s_Last_hope_GUI.GhostHorizontal">
+    <Position X="6" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAIAAAAAAAAAAAAAAAAABAAAgAAAAAAAA=</HashCode>
+      <FileName>GameGL\GhostHorizontal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Kindom_s_Last_hope_GUI.GhostIntelligent">
+    <Position X="8.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAIAAAAAAAAAAAAAAAAAAAABBAAgAAAAAAAA=</HashCode>
+      <FileName>GameGL\GhostIntelligent.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Kindom_s_Last_hope_GUI.GhostRandom">
+    <Position X="10.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAIAAAAAAAAAAAAAAAAABAAAgAAAAAAAA=</HashCode>
+      <FileName>GameGL\GhostRandom.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Kindom_s_Last_hope_GUI.GhostVertical">
+    <Position X="12.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAIAAAAAAAAAAAAAAAAABAAAgAAAAAAAA=</HashCode>
+      <FileName>GameGL\GhostVertical.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Kindom_s_Last_hope_GUI.Program" Collapsed="true">
+    <Position X="18.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Kindom_s_Last_hope_GUI.StartUpGameMenu" Collapsed="true">
+    <Position X="18.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StartUpGameMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Kindom_s_Last_hope_GUI.GameGL.Bullet">
+    <Position X="1.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAACAAAAAAAAAAAABAAAAAAAAAAgA=</HashCode>
+      <FileName>GameGL\Bullet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Kindom_s_Last_hope_GUI.GameGL.GameCollisionDetector">
+    <Position X="6" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>GameGL\GameCollisionDetector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Kindom_s_Last_hope_GUI.Properties.Resources" Collapsed="true">
+    <Position X="14.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAgAAAABEAAAAQAAAAAABAAAAQCSAYA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Kindom_s_Last_hope_GUI.Properties.Settings" Collapsed="true">
+    <Position X="16.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Kindom_s_Last_hope_GUI.IDistanceCalculator">
+    <Position X="8.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameGL\GhostIntelligent.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Kindom_s_Last_hope_GUI.GameDirection">
+    <Position X="10.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAACACAAAAAAAI=</HashCode>
+      <FileName>GameGL\GameDirection.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Kindom_s_Last_hope_GUI.GameGhostImage">
+    <Position X="10.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAACAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GameGL\GameGhostImage.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Kindom_s_Last_hope_GUI.GameObjectType">
+    <Position X="12.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAMAAAAAAQAAAABAAAAAAAAAAAABAAAAEAA=</HashCode>
+      <FileName>GameGL\GameObjectType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

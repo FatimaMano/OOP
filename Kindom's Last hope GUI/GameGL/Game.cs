@@ -9,15 +9,15 @@ namespace Kindom_s_Last_hope_GUI
     public class Game
     {
         public static GameObject getBlankGameObject(){
-            GameObject blankGameObject = new GameObject(GameObjectType.NONE, Kindom_s_Last_hope_GUI.Properties.Resources.TilePlain);
+            GameObject blankGameObject = new GameObject(GameObjectType.NONE, Kindom_s_Last_hope_GUI.Properties.Resources.simplebox);
             return blankGameObject;
         }
         public static Image getGameObjectImage(char displayCharacter)
         {
-            Image img = Kindom_s_Last_hope_GUI.Properties.Resources.TilePlain;
+            Image img = Kindom_s_Last_hope_GUI.Properties.Resources.simplebox;
             if (displayCharacter == '0' || displayCharacter == '$' || displayCharacter == '%' || displayCharacter == '>')
             {
-                img = Kindom_s_Last_hope_GUI.Properties.Resources.TileGreen;
+                img = Kindom_s_Last_hope_GUI.Properties.Resources.Tile;
             }
 
             /*if (displayCharacter == '#')

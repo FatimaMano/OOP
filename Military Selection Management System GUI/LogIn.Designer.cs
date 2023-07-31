@@ -28,25 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            IDText = new TextBox();
             label2 = new Label();
             label3 = new Label();
-            textBox2 = new TextBox();
-            button1 = new Button();
+            PasswordText = new TextBox();
+            btnLogin = new Guna.UI2.WinForms.Guna2Button();
             SuspendLayout();
             // 
-            // textBox1
+            // IDText
             // 
-            textBox1.Location = new Point(133, 286);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(311, 31);
-            textBox1.TabIndex = 1;
+            IDText.Location = new Point(133, 286);
+            IDText.Name = "IDText";
+            IDText.Size = new Size(311, 31);
+            IDText.TabIndex = 1;
             // 
             // label2
             // 
             label2.AutoSize = true;
+            label2.BackColor = Color.Silver;
             label2.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = Color.White;
+            label2.ForeColor = Color.Black;
             label2.Location = new Point(133, 233);
             label2.Name = "label2";
             label2.Size = new Size(44, 38);
@@ -56,47 +59,52 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.BackColor = Color.Silver;
             label3.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.ForeColor = Color.White;
+            label3.ForeColor = Color.Black;
             label3.Location = new Point(133, 353);
             label3.Name = "label3";
             label3.Size = new Size(132, 38);
             label3.TabIndex = 4;
             label3.Text = "Password";
             // 
-            // textBox2
+            // PasswordText
             // 
-            textBox2.Location = new Point(133, 406);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(311, 31);
-            textBox2.TabIndex = 3;
+            PasswordText.Location = new Point(133, 406);
+            PasswordText.Name = "PasswordText";
+            PasswordText.Size = new Size(311, 31);
+            PasswordText.TabIndex = 3;
             // 
-            // button1
+            // btnLogin
             // 
-            button1.AutoSize = true;
-            button1.BackColor = Color.DarkSlateGray;
-            button1.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(218, 503);
-            button1.Margin = new Padding(10, 3, 3, 3);
-            button1.Name = "button1";
-            button1.Size = new Size(144, 54);
-            button1.TabIndex = 5;
-            button1.Tag = "LoginButton";
-            button1.Text = "Login";
-            button1.UseVisualStyleBackColor = false;
+            btnLogin.CustomizableEdges = customizableEdges3;
+            btnLogin.DisabledState.BorderColor = Color.DarkGray;
+            btnLogin.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnLogin.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnLogin.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnLogin.FillColor = Color.FromArgb(46, 51, 73);
+            btnLogin.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btnLogin.ForeColor = Color.White;
+            btnLogin.Location = new Point(158, 497);
+            btnLogin.Name = "btnLogin";
+            btnLogin.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            btnLogin.Size = new Size(270, 68);
+            btnLogin.TabIndex = 5;
+            btnLogin.Text = "LogIn";
+            btnLogin.Click += btnLogin_Click;
             // 
             // LogIn
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Black;
+            BackColor = Color.White;
             ClientSize = new Size(603, 668);
-            Controls.Add(button1);
+            Controls.Add(btnLogin);
             Controls.Add(label3);
-            Controls.Add(textBox2);
+            Controls.Add(PasswordText);
             Controls.Add(label2);
-            Controls.Add(textBox1);
+            Controls.Add(IDText);
+            ForeColor = Color.Black;
             Name = "LogIn";
             Text = "    ";
             ResumeLayout(false);
@@ -104,10 +112,10 @@
         }
 
         #endregion
-        private TextBox textBox1;
+        private TextBox IDText;
         private Label label2;
         private Label label3;
-        private TextBox textBox2;
-        private Button button1;
+        private TextBox PasswordText;
+        private Guna.UI2.WinForms.Guna2Button btnLogin;
     }
 }

@@ -28,12 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
             SignUpHeading = new Label();
             ID = new Label();
             IDText = new TextBox();
             PasswordText = new TextBox();
             Password = new Label();
-            Name = new Label();
+            lblName = new Label();
             NameText = new TextBox();
             Age = new Label();
             EmailText = new TextBox();
@@ -42,25 +46,20 @@
             Address = new Label();
             Email = new Label();
             AgeText = new TextBox();
-            pictureBox1 = new PictureBox();
-            SideHeaderWelcome = new PictureBox();
-            Welcome = new Label();
-            label8 = new Label();
-            label11 = new Label();
-            pictureBox2 = new PictureBox();
             AddressText = new RichTextBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)SideHeaderWelcome).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            label1 = new Label();
+            btnSignUp = new Guna.UI2.WinForms.Guna2Button();
+            guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            lblMessage = new Label();
             SuspendLayout();
             // 
             // SignUpHeading
             // 
             SignUpHeading.AutoSize = true;
-            SignUpHeading.BackColor = Color.Black;
+            SignUpHeading.BackColor = Color.Transparent;
             SignUpHeading.Font = new Font("Verdana", 18F, FontStyle.Regular, GraphicsUnit.Point);
             SignUpHeading.ForeColor = Color.White;
-            SignUpHeading.Location = new Point(572, 47);
+            SignUpHeading.Location = new Point(102, 71);
             SignUpHeading.Name = "SignUpHeading";
             SignUpHeading.Size = new Size(228, 44);
             SignUpHeading.TabIndex = 0;
@@ -71,7 +70,7 @@
             ID.AutoSize = true;
             ID.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
             ID.ForeColor = Color.White;
-            ID.Location = new Point(453, 156);
+            ID.Location = new Point(102, 128);
             ID.Name = "ID";
             ID.Size = new Size(42, 29);
             ID.TabIndex = 1;
@@ -79,14 +78,14 @@
             // 
             // IDText
             // 
-            IDText.Location = new Point(453, 205);
+            IDText.Location = new Point(102, 170);
             IDText.Name = "IDText";
             IDText.Size = new Size(311, 31);
             IDText.TabIndex = 2;
             // 
             // PasswordText
             // 
-            PasswordText.Location = new Point(453, 434);
+            PasswordText.Location = new Point(102, 400);
             PasswordText.Name = "PasswordText";
             PasswordText.Size = new Size(311, 31);
             PasswordText.TabIndex = 4;
@@ -96,26 +95,26 @@
             Password.AutoSize = true;
             Password.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
             Password.ForeColor = Color.White;
-            Password.Location = new Point(453, 383);
+            Password.Location = new Point(102, 339);
             Password.Name = "Password";
             Password.Size = new Size(212, 29);
             Password.TabIndex = 3;
             Password.Text = "Create Password";
             // 
-            // Name
+            // lblName
             // 
-            Name.AutoSize = true;
-            Name.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            Name.ForeColor = Color.White;
-            Name.Location = new Point(453, 267);
-            Name.Name = "Name";
-            Name.Size = new Size(82, 29);
-            Name.TabIndex = 9;
-            Name.Text = "Name";
+            lblName.AutoSize = true;
+            lblName.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            lblName.ForeColor = Color.White;
+            lblName.Location = new Point(102, 219);
+            lblName.Name = "lblName";
+            lblName.Size = new Size(82, 29);
+            lblName.TabIndex = 9;
+            lblName.Text = "Name";
             // 
             // NameText
             // 
-            NameText.Location = new Point(453, 316);
+            NameText.Location = new Point(102, 277);
             NameText.Name = "NameText";
             NameText.Size = new Size(311, 31);
             NameText.TabIndex = 10;
@@ -125,7 +124,7 @@
             Age.AutoSize = true;
             Age.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
             Age.ForeColor = Color.White;
-            Age.Location = new Point(453, 500);
+            Age.Location = new Point(102, 463);
             Age.Name = "Age";
             Age.Size = new Size(58, 29);
             Age.TabIndex = 11;
@@ -133,7 +132,7 @@
             // 
             // EmailText
             // 
-            EmailText.Location = new Point(894, 205);
+            EmailText.Location = new Point(540, 170);
             EmailText.Name = "EmailText";
             EmailText.Size = new Size(311, 31);
             EmailText.TabIndex = 14;
@@ -143,7 +142,7 @@
             PhoneNumber.AutoSize = true;
             PhoneNumber.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
             PhoneNumber.ForeColor = Color.White;
-            PhoneNumber.Location = new Point(894, 267);
+            PhoneNumber.Location = new Point(540, 219);
             PhoneNumber.Name = "PhoneNumber";
             PhoneNumber.Size = new Size(189, 29);
             PhoneNumber.TabIndex = 13;
@@ -151,7 +150,7 @@
             // 
             // PhoneNumberText
             // 
-            PhoneNumberText.Location = new Point(894, 316);
+            PhoneNumberText.Location = new Point(540, 266);
             PhoneNumberText.Name = "PhoneNumberText";
             PhoneNumberText.Size = new Size(311, 31);
             PhoneNumberText.TabIndex = 16;
@@ -161,7 +160,7 @@
             Address.AutoSize = true;
             Address.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
             Address.ForeColor = Color.White;
-            Address.Location = new Point(894, 383);
+            Address.Location = new Point(540, 339);
             Address.Name = "Address";
             Address.Size = new Size(109, 29);
             Address.TabIndex = 15;
@@ -172,7 +171,7 @@
             Email.AutoSize = true;
             Email.Font = new Font("Verdana", 12F, FontStyle.Regular, GraphicsUnit.Point);
             Email.ForeColor = Color.White;
-            Email.Location = new Point(894, 156);
+            Email.Location = new Point(540, 128);
             Email.Name = "Email";
             Email.Size = new Size(181, 29);
             Email.TabIndex = 17;
@@ -180,95 +179,88 @@
             // 
             // AgeText
             // 
-            AgeText.Location = new Point(453, 551);
+            AgeText.Location = new Point(102, 522);
             AgeText.Name = "AgeText";
             AgeText.Size = new Size(311, 31);
             AgeText.TabIndex = 12;
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(150, 75);
-            pictureBox1.TabIndex = 19;
-            pictureBox1.TabStop = false;
-            // 
-            // SideHeaderWelcome
-            // 
-            SideHeaderWelcome.BackColor = Color.Gainsboro;
-            SideHeaderWelcome.Location = new Point(0, 0);
-            SideHeaderWelcome.Name = "SideHeaderWelcome";
-            SideHeaderWelcome.Size = new Size(404, 690);
-            SideHeaderWelcome.TabIndex = 20;
-            SideHeaderWelcome.TabStop = false;
-            // 
-            // Welcome
-            // 
-            Welcome.AutoSize = true;
-            Welcome.BackColor = Color.DimGray;
-            Welcome.Font = new Font("Verdana", 26F, FontStyle.Regular, GraphicsUnit.Point);
-            Welcome.ForeColor = Color.White;
-            Welcome.Location = new Point(78, 160);
-            Welcome.Name = "Welcome";
-            Welcome.Size = new Size(262, 62);
-            Welcome.TabIndex = 21;
-            Welcome.Text = "Welcome";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.BackColor = Color.DimGray;
-            label8.Font = new Font("Verdana", 16F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label8.ForeColor = Color.White;
-            label8.Location = new Point(40, 360);
-            label8.Name = "label8";
-            label8.Size = new Size(330, 38);
-            label8.TabIndex = 24;
-            label8.Text = "Military Selection";
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.BackColor = Color.DimGray;
-            label11.Font = new Font("Verdana", 26F, FontStyle.Regular, GraphicsUnit.Point);
-            label11.ForeColor = Color.White;
-            label11.Location = new Point(168, 267);
-            label11.Name = "label11";
-            label11.Size = new Size(85, 62);
-            label11.TabIndex = 25;
-            label11.Text = "To";
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = Properties.Resources.dominik_sostmann_8wgYWX2tXgk_unsplash__1_;
-            pictureBox2.Location = new Point(23, 468);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(371, 195);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 26;
-            pictureBox2.TabStop = false;
-            // 
             // AddressText
             // 
-            AddressText.Location = new Point(894, 434);
+            AddressText.Location = new Point(540, 400);
             AddressText.Name = "AddressText";
             AddressText.Size = new Size(318, 119);
             AddressText.TabIndex = 27;
             AddressText.Text = "";
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Broadway", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(229, 23);
+            label1.Name = "label1";
+            label1.Size = new Size(640, 32);
+            label1.TabIndex = 28;
+            label1.Text = "Military Selection Management System";
+            // 
+            // btnSignUp
+            // 
+            btnSignUp.CustomizableEdges = customizableEdges1;
+            btnSignUp.DisabledState.BorderColor = Color.DarkGray;
+            btnSignUp.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnSignUp.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnSignUp.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnSignUp.FillColor = Color.DimGray;
+            btnSignUp.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            btnSignUp.ForeColor = Color.White;
+            btnSignUp.Location = new Point(678, 546);
+            btnSignUp.Name = "btnSignUp";
+            btnSignUp.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            btnSignUp.Size = new Size(154, 54);
+            btnSignUp.TabIndex = 29;
+            btnSignUp.Text = "SignUp";
+            btnSignUp.Click += btnSignUp_Click;
+            // 
+            // guna2Button1
+            // 
+            guna2Button1.CustomizableEdges = customizableEdges3;
+            guna2Button1.DisabledState.BorderColor = Color.DarkGray;
+            guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
+            guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            guna2Button1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            guna2Button1.FillColor = Color.DimGray;
+            guna2Button1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            guna2Button1.ForeColor = Color.White;
+            guna2Button1.Location = new Point(514, 598);
+            guna2Button1.Name = "guna2Button1";
+            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            guna2Button1.Size = new Size(94, 33);
+            guna2Button1.TabIndex = 30;
+            guna2Button1.Text = "Login";
+            guna2Button1.Click += guna2Button1_Click;
+            // 
+            // lblMessage
+            // 
+            lblMessage.AutoSize = true;
+            lblMessage.Font = new Font("Times New Roman", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            lblMessage.ForeColor = Color.White;
+            lblMessage.Location = new Point(350, 611);
+            lblMessage.Name = "lblMessage";
+            lblMessage.Size = new Size(144, 20);
+            lblMessage.TabIndex = 31;
+            lblMessage.Text = "Already a Member";
+            // 
             // SignUp
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Black;
-            ClientSize = new Size(1324, 694);
+            BackColor = Color.FromArgb(46, 51, 73);
+            ClientSize = new Size(1025, 656);
+            Controls.Add(lblMessage);
+            Controls.Add(guna2Button1);
+            Controls.Add(btnSignUp);
+            Controls.Add(label1);
             Controls.Add(AddressText);
-            Controls.Add(pictureBox2);
-            Controls.Add(label11);
-            Controls.Add(label8);
-            Controls.Add(Welcome);
-            Controls.Add(SideHeaderWelcome);
-            Controls.Add(pictureBox1);
             Controls.Add(Email);
             Controls.Add(PhoneNumberText);
             Controls.Add(Address);
@@ -277,16 +269,14 @@
             Controls.Add(AgeText);
             Controls.Add(Age);
             Controls.Add(NameText);
-            Controls.Add(Name);
+            Controls.Add(lblName);
             Controls.Add(PasswordText);
             Controls.Add(Password);
             Controls.Add(IDText);
             Controls.Add(ID);
             Controls.Add(SignUpHeading);
+            Name = "SignUp";
             Text = "SignUp";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)SideHeaderWelcome).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -298,7 +288,7 @@
         private TextBox IDText;
         private TextBox PasswordText;
         private Label Password;
-        private Label Name;
+        private Label lblName;
         private TextBox NameText;
         private Label Age;
         private TextBox EmailText;
@@ -307,12 +297,10 @@
         private Label Address;
         private Label Email;
         private TextBox AgeText;
-        private PictureBox pictureBox1;
-        private PictureBox SideHeaderWelcome;
-        private Label Welcome;
-        private Label label8;
-        private Label label11;
-        private PictureBox pictureBox2;
         private RichTextBox AddressText;
+        private Label label1;
+        private Guna.UI2.WinForms.Guna2Button btnSignUp;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Label lblMessage;
     }
 }

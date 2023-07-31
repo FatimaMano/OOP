@@ -21,3 +21,17 @@ C:\Users\HP\source\repos\Military Selection Management System GUI\obj\Debug\net6
 C:\Users\HP\source\repos\Military Selection Management System GUI\obj\Debug\net6.0-windows\Military_Selection_Management_System_GUI.CandidateScreen.resources
 C:\Users\HP\source\repos\Military Selection Management System GUI\obj\Debug\net6.0-windows\Military_Selection_Management_System_GUI.SignUp.resources
 C:\Users\HP\source\repos\Military Selection Management System GUI\obj\Debug\net6.0-windows\Military_Selection_Management_System_GUI.StaffScreen.resources
+C:\Users\HP\source\repos\Military Selection Management System GUI\obj\Debug\net6.0-windows\Military_Selection_Management_System_GUI.User.LeaderBoard.resources
+C:\Users\HP\source\repos\Military Selection Management System GUI\obj\Debug\net6.0-windows\Military_Selection_Management_System_GUI.User.Application.resources
+C:\Users\HP\source\repos\Military Selection Management System GUI\obj\Debug\net6.0-windows\Military_Selection_Management_System_GUI.User.Dashboard.resources
+C:\Users\HP\source\repos\Military Selection Management System GUI\obj\Debug\net6.0-windows\Military_Selection_Management_System_GUI.User.AdmissionStatus.resources
+C:\Users\HP\source\repos\Military Selection Management System GUI\obj\Debug\net6.0-windows\Military_Selection_Management_System_GUI.User.ApplicationReview.resources
+C:\Users\HP\source\repos\Military Selection Management System GUI\obj\Debug\net6.0-windows\Military_Selection_Management_System_GUI.User.EducationalDetails.resources
+C:\Users\HP\source\repos\Military Selection Management System GUI\obj\Debug\net6.0-windows\Military_Selection_Management_System_GUI.User.Feedback.resources
+C:\Users\HP\source\repos\Military Selection Management System GUI\obj\Debug\net6.0-windows\Military_Selection_Management_System_GUI.User.Settings.resources
+C:\Users\HP\source\repos\Military Selection Management System GUI\obj\Debug\net6.0-windows\Military_Selection_Management_System_GUI.User.TestSchedule.resources
+C:\Users\HP\source\repos\Military Selection Management System GUI\bin\Debug\net6.0-windows\Guna.UI2.dll
+C:\Users\HP\source\repos\Military Selection Management System GUI\bin\Debug\net6.0-windows\System.Management.dll
+C:\Users\HP\source\repos\Military Selection Management System GUI\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Management.dll
+C:\Users\HP\source\repos\Military Selection Management System GUI\obj\Debug\net6.0-windows\Military Selection Management System GUI.csproj.CopyComplete
+C:\Users\HP\source\repos\Military Selection Management System GUI\obj\Debug\net6.0-windows\Military_Selection_Management_System_GUI.User.PersonalInformation.resources
